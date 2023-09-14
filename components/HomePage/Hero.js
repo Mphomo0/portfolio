@@ -25,7 +25,7 @@ const Hero = () => {
                 <style jsx>
         {`
             .hero-bg {
-                background-image: url("/images/HeroImage.jpg"); 
+                background-image: url("/images/heroImage.jpg"); 
                 background-size: cover;
                 background-position: center;
                 height: 70vh;
