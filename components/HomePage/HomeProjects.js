@@ -15,7 +15,7 @@ const HomeProjects = () => {
         <div className='card-grid mx-8 py-8'>
           <div>
             <Card className='p-0'>
-            <Image width={900} height={500} src="/images/portfolio/GymFitness.PNG"/>
+            <Image width={900} height={500} src="/images/portfolio/GymFitness.PNG" alt='gym fitness'/>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Gym Fitness
               </h5>
@@ -29,7 +29,7 @@ const HomeProjects = () => {
           </div>
           <div>
           <Card className='p-0'>
-            <Image width={900} height={500} src="/images/portfolio/Hangman.PNG"/>
+            <Image width={900} height={500} src="/images/portfolio/Hangman.PNG" alt='hangman'/>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Hangman Game
               </h5>
@@ -43,7 +43,7 @@ const HomeProjects = () => {
           </div>
           <div>
           <Card className='p-0'>
-            <Image width={900} height={500} src="/images/portfolio/itunes.PNG"/>
+            <Image width={900} height={500} src="/images/portfolio/itunes.PNG" alt='itunes'/>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Itunes Searh Api
               </h5>

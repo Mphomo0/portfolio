@@ -17,7 +17,7 @@ const CallToAction = () => {
             <Link href="/contact">
               {/* CTA button */}
               <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-800 hover:opacity-90 w-48 h-12 text-lg text-white bg-gradient-to-l from-indigo-600 to-indigo-700 rounded">
-                Let's Talk
+                Let&#39;s Talk
               </button>
             </Link>
           </div>
@@ -27,7 +27,7 @@ const CallToAction = () => {
       <style jsx>
         {`
           .cta-bg {
-            background-image: url("/images/CTA.jpg"); // Background image
+            background-image: url("/images/CTA.jpg"); 
             background-size: cover; // Cover the entire container
             background-position: center; // Center the background image
           }

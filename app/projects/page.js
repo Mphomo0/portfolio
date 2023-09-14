@@ -44,7 +44,7 @@ const page = () => {
           <div>
             {/* Card Grid */}
           <Card className='p-0'>
-            <Image width={900} height={500} src="/images/portfolio/itunes.PNG"/>
+            <Image width={900} height={500} src="/images/portfolio/itunes.PNG" alt="itunes thumbnail"/>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Itunes Searh Api
               </h5>
