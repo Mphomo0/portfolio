@@ -1,0 +1,203 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* -----------------------------
+   THEME TOKEN MAPPING
+------------------------------ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius: 0.75rem;
+}
+
+/* -----------------------------
+   LIGHT THEME (DEFAULT)
+------------------------------ */
+
+:root {
+  /* Backgrounds */
+  --background: oklch(0.985 0.01 260); /* soft cool white */
+  --foreground: oklch(0.21 0.02 260); /* deep readable navy */
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.02 260);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.02 260);
+
+  /* BRAND — based on your pink → purple gradient */
+  --primary: oklch(0.64 0.26 322); /* vibrant magenta-purple */
+  --primary-foreground: oklch(0.98 0.01 320);
+
+  /* Soft UI */
+  --secondary: oklch(0.95 0.01 260);
+  --secondary-foreground: oklch(0.35 0.02 260);
+
+  --muted: oklch(0.96 0.01 260);
+  --muted-foreground: oklch(0.55 0.02 260);
+
+  --accent: oklch(0.93 0.04 310);
+  --accent-foreground: oklch(0.28 0.05 310);
+
+  --destructive: oklch(0.6 0.23 27);
+
+  /* Borders & Inputs */
+  --border: oklch(0.9 0.01 260);
+  --input: oklch(0.94 0.01 260);
+  --ring: oklch(0.64 0.26 322);
+
+  /* Radius */
+  --radius: 0.75rem;
+}
+
+/* -----------------------------
+   DARK MODE (Optional, Elegant)
+------------------------------ */
+
+.dark {
+  --background: oklch(0.16 0.02 260);
+  --foreground: oklch(0.96 0.01 260);
+
+  --card: oklch(0.2 0.02 260);
+  --card-foreground: oklch(0.96 0.01 260);
+
+  --popover: oklch(0.2 0.02 260);
+  --popover-foreground: oklch(0.96 0.01 260);
+
+  --primary: oklch(0.7 0.27 322);
+  --primary-foreground: oklch(0.98 0.01 320);
+
+  --secondary: oklch(0.28 0.02 260);
+  --secondary-foreground: oklch(0.96 0.01 260);
+
+  --muted: oklch(0.26 0.02 260);
+  --muted-foreground: oklch(0.7 0.02 260);
+
+  --accent: oklch(0.32 0.05 310);
+  --accent-foreground: oklch(0.96 0.01 260);
+
+  --destructive: oklch(0.7 0.22 27);
+
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.7 0.27 322);
+}
+
+/* -----------------------------
+   GLOBAL BASE STYLES
+------------------------------ */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/40;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+/* -----------------------------
+   BRAND GRADIENT UTILITY
+------------------------------ */
+
+.brand-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.64 0.26 322),
+    oklch(0.7 0.23 280)
+  );
+}
+
+.brand-text-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.64 0.26 322),
+    oklch(0.7 0.23 280)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
