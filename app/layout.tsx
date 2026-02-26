@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mpho-moipolai.co.za'),
+  metadataBase: new URL('https://www.mpho-moipolai.co.za'),
   title: {
     default:
       'Mpho Moipolai | Full Stack Web Developer | Next.js & React Expert',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://mpho-moipolai.co.za',
+    url: 'https://www.mpho-moipolai.co.za',
     title: 'Mpho Moipolai | Full Stack Web Developer',
     description:
       'Professional Full Stack Developer building scalable web applications with Next.js, React, and Node.js.',
@@ -79,16 +79,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en' className={inter.variable} suppressHydrationWarning>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* Google Analytics */}
         <Script
-          src='https://www.googletagmanager.com/gtag/js?id=G-EJ7Q1F7MPL'
-          strategy='afterInteractive'
+          src="https://www.googletagmanager.com/gtag/js?id=G-EJ7Q1F7MPL"
+          strategy="afterInteractive"
         />
-        <Script id='google-analytics' strategy='afterInteractive'>
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -101,15 +101,15 @@ export default function RootLayout({
 
         {/* Structured Data - Person */}
         <Script
-          id='structured-data'
-          type='application/ld+json'
-          strategy='afterInteractive'
+          id="structured-data"
+          type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Mpho Moipolai',
-              url: 'https://mpho-moipolai.co.za',
+              url: 'https://www.mpho-moipolai.co.za',
               jobTitle: 'Full Stack Web Developer',
               worksFor: {
                 '@type': 'Organization',
@@ -138,9 +138,9 @@ export default function RootLayout({
         />
 
         <Script
-          id='faq-service-schema'
-          type='application/ld+json'
-          strategy='afterInteractive'
+          id="faq-service-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
@@ -180,7 +180,7 @@ export default function RootLayout({
                   provider: {
                     '@type': 'Person',
                     name: 'Mpho Moipolai',
-                    url: 'https://mpho-moipolai.co.za',
+                    url: 'https://www.mpho-moipolai.co.za',
                   },
                   areaServed: {
                     '@type': 'Place',
@@ -191,7 +191,7 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'WebSite',
-                  url: 'https://mpho-moipolai.co.za',
+                  url: 'https://www.mpho-moipolai.co.za',
                   name: 'Mpho Moipolai Portfolio',
                   description:
                     'Portfolio website of Mpho Moipolai, a Full Stack Web Developer specializing in Next.js, React, and Node.js.',
@@ -207,19 +207,19 @@ export default function RootLayout({
                       '@type': 'ListItem',
                       position: 1,
                       name: 'Home',
-                      item: 'https://mpho-moipolai.co.za',
+                      item: 'https://www.mpho-moipolai.co.za',
                     },
                     {
                       '@type': 'ListItem',
                       position: 2,
                       name: 'Projects',
-                      item: 'https://mpho-moipolai.co.za/#projects',
+                      item: 'https://www.mpho-moipolai.co.za/#projects',
                     },
                     {
                       '@type': 'ListItem',
                       position: 3,
                       name: 'Contact',
-                      item: 'https://mpho-moipolai.co.za/#contact',
+                      item: 'https://www.mpho-moipolai.co.za/#contact',
                     },
                   ],
                 },
@@ -229,9 +229,9 @@ export default function RootLayout({
         />
 
         <Script
-          id='projects-schema'
-          type='application/ld+json'
-          strategy='afterInteractive'
+          id="projects-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
@@ -252,9 +252,15 @@ export default function RootLayout({
                   creator: {
                     '@type': 'Person',
                     name: 'Mpho Moipolai',
-                    url: 'https://mpho-moipolai.co.za',
+                    url: 'https://www.mpho-moipolai.co.za',
                   },
-                  programmingLanguage: ['Next.js', 'TypeScript', 'Prisma', 'MongoDB', 'Tailwind'],
+                  programmingLanguage: [
+                    'Next.js',
+                    'TypeScript',
+                    'Prisma',
+                    'MongoDB',
+                    'Tailwind',
+                  ],
                 },
                 {
                   '@type': 'SoftwareApplication',
@@ -272,7 +278,7 @@ export default function RootLayout({
                   creator: {
                     '@type': 'Person',
                     name: 'Mpho Moipolai',
-                    url: 'https://mpho-moipolai.co.za',
+                    url: 'https://www.mpho-moipolai.co.za',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
                 },
@@ -292,7 +298,7 @@ export default function RootLayout({
                   creator: {
                     '@type': 'Person',
                     name: 'Mpho Moipolai',
-                    url: 'https://mpho-moipolai.co.za',
+                    url: 'https://www.mpho-moipolai.co.za',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
                 },
@@ -312,7 +318,7 @@ export default function RootLayout({
                   creator: {
                     '@type': 'Person',
                     name: 'Mpho Moipolai',
-                    url: 'https://mpho-moipolai.co.za',
+                    url: 'https://www.mpho-moipolai.co.za',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
                 },
