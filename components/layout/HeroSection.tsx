@@ -184,14 +184,14 @@ export default function HeroSection() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             variants={itemVariants}
           >
-            Mpho Moipolai
+            Web Design Midrand
             <motion.span
               className="block brand-text-gradient"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              Full Stack Web Developer in Johannesburg, South Africa
+              Mpho Moipolai | Next.js Expert
             </motion.span>
           </motion.h1>
 
@@ -200,10 +200,7 @@ export default function HeroSection() {
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
             variants={itemVariants}
           >
-            I&lsquo;m {PORTFOLIO_CONFIG.name}, a Full Stack Web Developer based
-            in {PORTFOLIO_CONFIG.location}. I help startups and growing
-            businesses build fast, scalable, and SEO-optimized web applications
-            using Next.js, React, and Node.js.
+            I&lsquo;m {PORTFOLIO_CONFIG.name}, a Professional Web Developer specializing in **Next.js and SEO services in Midrand, South Africa**. I help startups and small businesses build fast, scalable, and AI-optimized web applications.
           </motion.p>
 
           {/* CTA Buttons */}

@@ -83,19 +83,18 @@ export function AboutSection() {
                   id='about-heading'
                   className='text-3xl md:text-4xl font-bold text-foreground mb-6'
                 >
-                  Crafting digital experiences with precision and purpose
+                  Leading Web Design in Midrand & Full-Stack Development
                 </h2>
                 <div className='space-y-4 text-muted-foreground'>
                   <p className='text-lg'>
-                    I'm a full-stack developer with 13+ years of experience
-                    building production-grade web applications. My expertise
+                    I'm a full-stack developer and **SEO specialist based in Midrand, South Africa**, with 13+ years of experience building production-grade web applications. My expertise
                     lies in the
                     <span className='text-foreground font-medium'>
                       {' '}
                       Next.js ecosystem
                     </span>
                     , where I leverage App Router, Server Components, and modern
-                    React patterns to deliver exceptional user experiences.
+                    React patterns to deliver exceptional user experiences for local and international clients.
                   </p>
                   <p>
                     I&lsquo;ve built web applications used by a growing number

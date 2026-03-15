@@ -16,12 +16,25 @@ const PORTFOLIO_CONFIG = {
 } as const
 
 const footerLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#stack', label: 'Stack' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#philosophy', label: 'Philosophy' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#about', label: 'About' },
+  { href: '/#stack', label: 'Stack' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#experience', label: 'Experience' },
+  { href: '/#philosophy', label: 'Philosophy' },
+  { href: '/#contact', label: 'Contact' },
+]
+
+const serviceLinks = [
+  { href: '/web-design-midrand', label: 'Web Design Midrand' },
+  { href: '/seo-services-midrand', label: 'SEO Services Midrand' },
+  { href: '/nextjs-website-design', label: 'Next.js Website Design' },
+  { href: '/ecommerce-website-development', label: 'Ecommerce Development' },
+  { href: '/branding-design', label: 'Branding & Graphic Design' },
+  { href: '/social-media-marketing', label: 'Social Media Marketing' },
+  { href: '/social-media-ads', label: 'Social Media Ads' },
+  { href: '/web-hosting', label: 'Web Hosting South Africa' },
+  { href: '/ux-ui-design', label: 'UX/UI Design Services' },
+  { href: '/web-maintenance', label: 'Website Maintenance' },
 ]
 
 const GitHubIcon = () => (
@@ -152,40 +165,68 @@ export function Footer() {
       >
         <div className='container mx-auto px-6'>
           <div className='max-w-6xl mx-auto'>
-            <div className='flex flex-col md:flex-row items-center justify-between gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-12 mb-12'>
               {/* Logo & Description */}
-              <div className='text-center md:text-left'>
+              <div className='col-span-1 md:col-span-1'>
                 <Link
                   href='/'
-                  className='text-xl font-bold text-foreground hover:text-primary transition-colors'
+                  className='inline-block mb-4'
                   aria-label='Mpho Moipolai - Home'
                 >
                   <Image
                     src='/images/logo/logo.webp'
                     alt='Mpho Moipolai Logo'
-                    width={150}
-                    height={150}
-                    className='w-full h-full object-contain'
+                    width={120}
+                    height={120}
+                    className='object-contain'
                   />
                 </Link>
+                <p className='text-sm text-muted-foreground'>
+                  Professional Web Design and SEO services in Midrand. Specialized in Next.js and high-performance digital solutions.
+                </p>
               </div>
 
               {/* Navigation */}
-              <nav aria-label='Footer navigation'>
-                <ul className='flex flex-wrap items-center justify-center gap-6'>
-                  {footerLinks.map((link) => (
-                    <li key={link.href}>
-                      <a
-                        href={link.href}
-                        className='text-sm text-muted-foreground hover:text-foreground transition-colors'
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              <div>
+                <h3 className='font-bold mb-4 text-foreground'>Navigation</h3>
+                <nav aria-label='Footer navigation'>
+                  <ul className='space-y-2'>
+                    {footerLinks.map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className='text-sm text-muted-foreground hover:text-foreground transition-colors'
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
 
+              {/* Services */}
+              <div className='md:col-span-2'>
+                <h3 className='font-bold mb-4 text-foreground'>Our Services</h3>
+                <nav aria-label='Services navigation'>
+                  <ul className='grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2'>
+                    {serviceLinks.map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className='text-sm text-muted-foreground hover:text-foreground transition-colors'
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            {/* Bottom Section */}
+            <div className='flex flex-col md:flex-row items-center justify-between gap-8 pt-8 border-t border-border/50'>
               {/* Social Links */}
               <div
                 className='flex items-center gap-4'
@@ -204,10 +245,8 @@ export function Footer() {
                   </a>
                 ))}
               </div>
-            </div>
 
-            {/* Copyright */}
-            <div className='mt-8 pt-8 border-t border-border/50 text-center'>
+              {/* Copyright */}
               <p className='text-sm text-muted-foreground'>
                 © {currentYear} {PORTFOLIO_CONFIG.name}. Built with Next.js &
                 Tailwind CSS.

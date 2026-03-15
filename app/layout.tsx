@@ -21,12 +21,22 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpho-moipolai.co.za'),
   title: {
     default:
-      'Mpho Moipolai | Full Stack Web Developer | Next.js & React Expert',
+      'Web Design Midrand | Next.js Developer & SEO Expert South Africa',
     template: '%s | Mpho Moipolai',
   },
   description:
-    'Full Stack Web Developer specializing in Next.js, React, and Node.js. I build fast, scalable, SEO-optimized web applications for startups and growing businesses.',
+    'Professional web design in Midrand and South Africa. Specialized in Next.js, React, and SEO. I build high-performance, AI-ready websites for startups and small businesses.',
   applicationName: 'Mpho Moipolai Portfolio',
+  keywords: [
+    'Web Design Midrand',
+    'Website Design Midrand',
+    'Web Design South Africa',
+    'Next.js Website Design',
+    'UI/UX Design Agency South Africa',
+    'SEO Services Midrand',
+    'Ecommerce Website Development South Africa',
+    'Professional Web Developer Midrand',
+  ],
   authors: [{ name: 'Mpho Moipolai' }],
   creator: 'Mpho Moipolai',
   publisher: 'Mpho Moipolai',
@@ -47,24 +57,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://www.mpho-moipolai.co.za',
-    title: 'Mpho Moipolai | Full Stack Web Developer',
+    title: 'Web Design Midrand | Mpho Moipolai | Next.js Developer',
     description:
-      'Professional Full Stack Developer building scalable web applications with Next.js, React, and Node.js.',
+      'Expert web design and SEO services in Midrand. Building fast, scalable, and AI-optimized web applications with Next.js.',
     siteName: 'Mpho Moipolai',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mpho Moipolai - Full Stack Developer',
+        alt: 'Mpho Moipolai - Web Design & SEO Expert',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mpho Moipolai | Full Stack Web Developer',
+    title: 'Web Design Midrand | Mpho Moipolai',
     description:
-      'Professional Full Stack Developer specializing in Next.js, React, and Node.js.',
+      'Professional Web Developer specializing in Next.js and SEO for Midrand businesses.',
     images: ['/images/og-image.jpg'],
     creator: '@gift187',
   },
@@ -99,7 +109,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Structured Data - Person */}
+        {/* Global Structured Data */}
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -107,36 +117,124 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Person',
-              name: 'Mpho Moipolai',
-              url: 'https://www.mpho-moipolai.co.za',
-              jobTitle: 'Full Stack Web Developer',
-              worksFor: {
-                '@type': 'Organization',
-                name: 'Freelance',
-              },
-              knowsAbout: [
-                'Next.js',
-                'React',
-                'Node.js',
-                'TypeScript',
-                'Full Stack Development',
-                'Web Application Development',
-              ],
-              areaServed: {
-                '@type': 'Place',
-                name: 'Johannesburg, South Africa',
-              },
-              sameAs: [
-                'https://github.com/Mphomo0',
-                'https://www.linkedin.com/in/mpho-moipolai-26b06286',
-                'https://www.facebook.com/mbmoipolai',
-                'https://www.instagram.com/mphomoipolai',
+              '@graph': [
+                {
+                  '@type': 'Person',
+                  '@id': 'https://www.mpho-moipolai.co.za/#person',
+                  name: 'Mpho Moipolai',
+                  url: 'https://www.mpho-moipolai.co.za',
+                  jobTitle: 'Full Stack Web Developer & SEO Specialist',
+                  worksFor: {
+                    '@type': 'Organization',
+                    name: 'Freelance',
+                  },
+                  knowsAbout: [
+                    'Web Design Midrand',
+                    'Next.js',
+                    'React',
+                    'SEO',
+                    'AEO',
+                    'GEO',
+                    'TypeScript',
+                    'Full Stack Development',
+                  ],
+                  areaServed: {
+                    '@type': 'Place',
+                    name: 'South Africa',
+                  },
+                  sameAs: [
+                    'https://github.com/Mphomo0',
+                    'https://www.linkedin.com/in/mpho-moipolai-26b06286',
+                    'https://www.facebook.com/mbmoipolai',
+                    'https://www.instagram.com/mphomoipolai',
+                  ],
+                },
+                {
+                  '@type': 'LocalBusiness',
+                  '@id': 'https://www.mpho-moipolai.co.za/#localbusiness',
+                  name: 'Mpho Moipolai Web Design & SEO',
+                  url: 'https://www.mpho-moipolai.co.za',
+                  logo: 'https://www.mpho-moipolai.co.za/images/logo/logo.webp',
+                  image: 'https://www.mpho-moipolai.co.za/images/og-image.jpg',
+                  description:
+                    'Expert web design and SEO services in Midrand, South Africa. Specializing in Next.js and high-performance digital solutions.',
+                  address: {
+                    '@type': 'PostalAddress',
+                    'streetAddress': 'Halfway House',
+                    'addressLocality': 'Midrand',
+                    'addressRegion': 'Gauteng',
+                    'postalCode': '1685',
+                    'addressCountry': 'ZA',
+                  },
+                  geo: {
+                    '@type': 'GeoCoordinates',
+                    latitude: -25.9984,
+                    longitude: 28.1263,
+                  },
+                  openingHoursSpecification: {
+                    '@type': 'OpeningHoursSpecification',
+                    dayOfWeek: [
+                      'Monday',
+                      'Tuesday',
+                      'Wednesday',
+                      'Thursday',
+                      'Friday',
+                    ],
+                    opens: '09:00',
+                    closes: '17:00',
+                  },
+                  priceRange: '$$',
+                },
+                {
+                  '@type': 'Organization',
+                  '@id': 'https://www.mpho-moipolai.co.za/#organization',
+                  name: 'Mpho Moipolai Digital',
+                  url: 'https://www.mpho-moipolai.co.za',
+                  logo: 'https://www.mpho-moipolai.co.za/images/logo/logo.webp',
+                  sameAs: [
+                    'https://www.linkedin.com/in/mpho-moipolai-26b06286',
+                    'https://github.com/Mphomo0',
+                  ],
+                },
+                {
+                  '@type': 'WebSite',
+                  url: 'https://www.mpho-moipolai.co.za',
+                  name: 'Mpho Moipolai | Web Design Midrand',
+                  description:
+                    'Portfolio website of Mpho Moipolai, a Full Stack Web Developer specializing in Next.js, React, and SEO.',
+                  publisher: {
+                    '@id': 'https://www.mpho-moipolai.co.za/#person',
+                  },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.mpho-moipolai.co.za',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Projects',
+                      item: 'https://www.mpho-moipolai.co.za/#projects',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Contact',
+                      item: 'https://www.mpho-moipolai.co.za/#contact',
+                    },
+                  ],
+                },
               ],
             }),
           }}
         />
 
+        {/* FAQ and Service Schema */}
         <Script
           id="faq-service-schema"
           type="application/ld+json"
@@ -176,58 +274,23 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'Service',
-                  serviceType: 'Full Stack Web Development',
+                  serviceType: 'Web Design & SEO Services',
                   provider: {
-                    '@type': 'Person',
-                    name: 'Mpho Moipolai',
-                    url: 'https://www.mpho-moipolai.co.za',
+                    '@id': 'https://www.mpho-moipolai.co.za/#person',
                   },
                   areaServed: {
                     '@type': 'Place',
-                    name: 'Johannesburg, South Africa',
+                    name: 'South Africa',
                   },
                   description:
-                    'Building fast, scalable, and SEO-optimized web applications using Next.js, React, and Node.js for startups and growing businesses.',
-                },
-                {
-                  '@type': 'WebSite',
-                  url: 'https://www.mpho-moipolai.co.za',
-                  name: 'Mpho Moipolai Portfolio',
-                  description:
-                    'Portfolio website of Mpho Moipolai, a Full Stack Web Developer specializing in Next.js, React, and Node.js.',
-                  publisher: {
-                    '@type': 'Person',
-                    name: 'Mpho Moipolai',
-                  },
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.mpho-moipolai.co.za',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'Projects',
-                      item: 'https://www.mpho-moipolai.co.za/#projects',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      name: 'Contact',
-                      item: 'https://www.mpho-moipolai.co.za/#contact',
-                    },
-                  ],
+                    'Building fast, scalable, and SEO-optimized web applications using Next.js, React, and Node.js for startups and growing businesses in Midrand and across South Africa.',
                 },
               ],
             }),
           }}
         />
 
+        {/* Projects Schema */}
         <Script
           id="projects-schema"
           type="application/ld+json"
@@ -250,9 +313,7 @@ export default function RootLayout({
                     priceCurrency: 'USD',
                   },
                   creator: {
-                    '@type': 'Person',
-                    name: 'Mpho Moipolai',
-                    url: 'https://www.mpho-moipolai.co.za',
+                    '@id': 'https://www.mpho-moipolai.co.za/#person',
                   },
                   programmingLanguage: [
                     'Next.js',
@@ -276,9 +337,7 @@ export default function RootLayout({
                     priceCurrency: 'USD',
                   },
                   creator: {
-                    '@type': 'Person',
-                    name: 'Mpho Moipolai',
-                    url: 'https://www.mpho-moipolai.co.za',
+                    '@id': 'https://www.mpho-moipolai.co.za/#person',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
                 },
@@ -296,9 +355,7 @@ export default function RootLayout({
                     priceCurrency: 'USD',
                   },
                   creator: {
-                    '@type': 'Person',
-                    name: 'Mpho Moipolai',
-                    url: 'https://www.mpho-moipolai.co.za',
+                    '@id': 'https://www.mpho-moipolai.co.za/#person',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
                 },
@@ -316,9 +373,7 @@ export default function RootLayout({
                     priceCurrency: 'USD',
                   },
                   creator: {
-                    '@type': 'Person',
-                    name: 'Mpho Moipolai',
-                    url: 'https://www.mpho-moipolai.co.za',
+                    '@id': 'https://www.mpho-moipolai.co.za/#person',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
                 },
