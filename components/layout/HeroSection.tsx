@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { ArrowRight, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { motion } from 'motion/react'
+import { motion, AnimatePresence } from 'motion/react'
 
 const PORTFOLIO_CONFIG = {
   name: 'Mpho Moipolai',
@@ -141,29 +141,11 @@ export default function HeroSection() {
       aria-label="Introduction and hero section"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
     >
-      {/* Animated Background */}
-      <motion.div
-        className="absolute inset-0 opacity-40 pointer-events-none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
-        transition={{ duration: 1 }}
-      >
-        <motion.div
-          className="absolute top-1/4 -left-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-20"
-          animate={{ x: [0, 30, 0], y: [0, -20, 0], scale: [1, 1.1, 1] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute bottom-1/4 -right-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-10"
-          animate={{ x: [0, -20, 0], y: [0, 30, 0], scale: [1, 1.05, 1] }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: 'easeInOut',
-            delay: 2,
-          }}
-        />
-      </motion.div>
+      {/* Animated Background - CSS only for faster LCP */}
+      <div className="absolute inset-0 opacity-40 pointer-events-none">
+        <div className="absolute top-1/4 -left-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-20 animate-float" />
+        <div className="absolute bottom-1/4 -right-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-10 animate-float-delayed" />
+      </div>
 
       <div className="container mx-auto px-6 py-32 relative z-10">
         <motion.div

@@ -171,6 +171,11 @@
   animation: float 8s ease-in-out infinite;
 }
 
+.animate-float-delayed {
+  animation: float 10s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
