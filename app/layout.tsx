@@ -5,8 +5,8 @@ import { Navbar } from '@/components/layout/Navbar'
 import Script from 'next/script'
 import { Footer } from '@/components/layout/Footer'
 
-const inter = Inter({ 
-  subsets: ['latin'], 
+const inter = Inter({
+  subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
   preload: true,
@@ -29,12 +29,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpho-moipolai.co.za'),
   title: {
-    default:
-      'Web Design Midrand | Next.js Developer & SEO Expert South Africa',
+    default: 'Web Design Midrand | Next.js Developer & SEO Expert South Africa',
     template: '%s | Mpho Moipolai',
   },
   description:
-    'Professional web design in Midrand and South Africa. Specialized in Next.js, React, and SEO. I build high-performance, AI-ready websites for startups and small businesses.',
+    'Professional web design in Midrand and South Africa. Specialized in Next.js, React, and SEO. I Build high-performance websites.',
   applicationName: 'Mpho Moipolai Portfolio',
   keywords: [
     'Web Design Midrand',
@@ -167,11 +166,11 @@ export default function RootLayout({
                     'Expert web design and SEO services in Midrand, South Africa. Specializing in Next.js and high-performance digital solutions.',
                   address: {
                     '@type': 'PostalAddress',
-                    'streetAddress': 'Halfway House',
-                    'addressLocality': 'Midrand',
-                    'addressRegion': 'Gauteng',
-                    'postalCode': '1685',
-                    'addressCountry': 'ZA',
+                    streetAddress: 'Halfway House',
+                    addressLocality: 'Midrand',
+                    addressRegion: 'Gauteng',
+                    postalCode: '1685',
+                    addressCountry: 'ZA',
                   },
                   geo: {
                     '@type': 'GeoCoordinates',
