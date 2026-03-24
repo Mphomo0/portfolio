@@ -270,10 +270,50 @@ export default function RootLayout({
                     },
                     {
                       '@type': 'Question',
+                      name: 'How much does a website cost in South Africa?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Website costs in South Africa range from R3,000-R15,000+ depending on complexity. Basic business websites start at R3,000, e-commerce sites range from R8,000-R30,000, and custom Next.js websites start at R8,000.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'How long does it take to build a website?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Standard websites take 2-4 weeks from consultation to launch. E-commerce sites take 4-8 weeks. Custom web applications take 6-12 weeks depending on complexity.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What is SEO and why is it important?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'SEO (Search Engine Optimization) improves website visibility in search results. It takes 3-6 months to see results. Ranking on the first page of Google can increase organic traffic by 300% or more.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Do you offer local SEO in Midrand?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes, local SEO includes Google Business Profile optimization, local keyword targeting for Midrand and Gauteng, citation building, and review management to dominate local search results.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What is the best web hosting in South Africa?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Quality web hosting in South Africa includes 99.9% uptime, free SSL, daily backups, CDN integration, and 24/7 support. Costs range from R99-R5,000/month depending on server type.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
                       name: 'Do you work with international clients?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'Yes! I work with clients globally, delivering high-quality web applications remotely while maintaining clear communication and project management standards.',
+                        text: 'Yes, I work with clients globally, delivering high-quality web applications remotely while maintaining clear communication and project management standards.',
                       },
                     },
                   ],
@@ -382,6 +422,74 @@ export default function RootLayout({
                     '@id': 'https://www.mpho-moipolai.co.za/#person',
                   },
                   programmingLanguage: ['Next.js', 'TypeScript', 'Tailwind'],
+                },
+              ],
+            }),
+          }}
+        />
+
+        {/* HowTo Schema for AI Citations */}
+        <Script
+          id="howto-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'HowTo',
+                  name: 'How to Choose a Web Design Agency in South Africa',
+                  description: 'A step-by-step guide to selecting the right web design agency for your business in South Africa.',
+                  step: [
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Define Your Requirements',
+                      text: 'List your business goals, target audience, required features, and budget before contacting agencies.',
+                    },
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Check Portfolio and Reviews',
+                      text: 'Review the agency portfolio for quality and relevance. Check Google reviews and testimonials from past clients.',
+                    },
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Evaluate Technical Expertise',
+                      text: 'Ensure they use modern technologies like Next.js, React, and implement SEO best practices for better Google rankings.',
+                    },
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Request Detailed Quote',
+                      text: 'Get a comprehensive quote including timeline, costs, hosting, maintenance, and post-launch support.',
+                    },
+                  ],
+                },
+                {
+                  '@type': 'HowTo',
+                  name: 'How to Improve Your Website SEO',
+                  description: 'Essential steps to improve your website ranking on Google in South Africa.',
+                  step: [
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Conduct Keyword Research',
+                      text: 'Identify relevant keywords for your business, including local terms like "web design Midrand" or "SEO services South Africa".',
+                    },
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Optimize On-Page Elements',
+                      text: 'Ensure proper title tags, meta descriptions, header tags, and image alt text for all pages.',
+                    },
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Improve Page Speed',
+                      text: 'Optimize images, enable compression, use CDN, and ensure fast hosting. Aim for under 3 second load time.',
+                    },
+                    {
+                      '@type': 'HowToStep',
+                      name: 'Build Quality Backlinks',
+                      text: 'Earn links from reputable South African websites and directories to improve domain authority.',
+                    },
+                  ],
                 },
               ],
             }),
