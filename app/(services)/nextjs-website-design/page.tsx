@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Next.js Website Design Midrand | High Performance South Africa',
-  description: 'Fast, secure, and SEO-friendly Next.js website design in Midrand. We build modern web applications for startups and small businesses in South Africa.',
+  title: 'Next.js Developer Midrand | High-Performance Websites',
+  description: 'Fast, secure Next.js websites in Midrand. Server-side rendering, Static Site Generation for optimal SEO. South Africa.',
 }
 
 export default function NextjsWebsiteDesignPage() {
@@ -16,7 +16,11 @@ export default function NextjsWebsiteDesignPage() {
         "name": "Next.js Website Design",
         "description": "Custom Next.js website design and development services in Midrand, specializing in high-performance web applications.",
         "provider": { "@id": "https://www.mpho-moipolai.co.za/#person" },
-        "areaServed": { "@type": "Place", "name": "South Africa" }
+        "areaServed": [
+          { "@type": "State", "name": "Gauteng" },
+          { "@type": "City", "name": "Midrand" },
+          { "@type": "Country", "name": "South Africa" }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -26,7 +30,7 @@ export default function NextjsWebsiteDesignPage() {
             "name": "Why choose Next.js for my website?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Next.js offers superior performance, excellent SEO out of the box, and a great developer experience, making it perfect for modern web applications."
+              "text": "Next.js offers superior performance with Server-Side Rendering (SSR) and Static Site Generation (SSG), excellent SEO, automatic image optimization, and great developer experience. It powers sites like Netflix, Uber, and TikTok."
             }
           },
           {
@@ -34,7 +38,23 @@ export default function NextjsWebsiteDesignPage() {
             "name": "Is Next.js good for SEO?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Next.js supports Server-Side Rendering (SSR) and Static Site Generation (SSG), which are critical for search engine indexing and performance."
+              "text": "Yes, Next.js excels at SEO with SSR and SSG for fast page loads, automatic meta tag generation, sitemaps, and structured data support. Sites load in under 2 seconds, a key Google ranking factor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a Next.js website cost in South Africa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Next.js websites in South Africa cost R8,000-R25,000+ depending on complexity, custom features, and design requirements. The investment pays off with better SEO and faster performance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Next.js and WordPress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Next.js is a React framework offering better performance, security, and SEO compared to WordPress. No plugins or theme dependencies, custom designs, no monthly hosting fees, and superior loading speeds."
             }
           }
         ]
@@ -55,24 +75,88 @@ export default function NextjsWebsiteDesignPage() {
             ← Back to Home
           </Link>
         </nav>
-        <h1 className="text-4xl font-bold mb-8">Next.js Website Design in Midrand</h1>
-        <section className="prose prose-invert max-w-none">
-          <p className="text-xl mb-6">Build the future of the web with Next.js website design in Midrand. We create lightning-fast, highly scalable web applications that provide an unmatched user experience in South Africa.</p>
-          <h2 className="text-2xl font-bold mt-12 mb-4">Why Next.js is Essential for Your Business</h2>
-          <p>In the modern digital landscape, speed and performance are non-negotiable. Next.js is the preferred framework for businesses that want to provide a seamless, fast-loading experience for their users. Our Next.js design services in Midrand ensure your website is not only visually stunning but also technically superior, providing a solid foundation for your business growth in South Africa.</p>
-          <p className="mt-6">
-            Want a high-performance website? <Link href="/#contact" className="text-violet-500 hover:underline">Get in touch</Link> to discuss your Next.js project.
+        
+        <section className="mb-12">
+          <h1 className="text-4xl font-bold mb-6">Next.js Website Design in Midrand</h1>
+          <p className="text-xl leading-relaxed max-w-[65ch]">
+            High-performance Next.js websites in Midrand, Gauteng. We build lightning-fast, SEO-optimized web applications that help South African businesses rank higher on Google and convert more visitors into customers.
           </p>
+        </section>
 
-          <h2 className="text-2xl font-bold mt-12 mb-4">Frequently Asked Questions</h2>
-          <div className="space-y-6 mt-8">
-             <div className="border-b border-white/10 pb-4">
-                <h3 className="text-xl font-semibold mb-2">Why choose Next.js for my website?</h3>
-                <p>Next.js offers superior performance, excellent SEO out of the box, and a great developer experience, making it perfect for modern web applications in Midrand.</p>
+        <section className="mb-12 bg-muted/30 rounded-2xl p-8 border">
+          <h2 className="text-2xl font-bold mb-4">What is Next.js Website Design?</h2>
+          <p className="text-lg leading-relaxed">
+            Next.js is a React-based framework that enables Server-Side Rendering (SSR) and Static Site Generation (SSG) for optimal performance and SEO. Unlike traditional websites, Next.js pages load instantly and are fully indexed by search engines. This framework powers websites for Netflix, Uber, TikTok, and thousands of businesses worldwide. In South Africa, Next.js websites typically load under 2 seconds, a critical factor for Google rankings and user experience.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Why Choose Next.js for Your Business</h2>
+          <p className="text-lg leading-relaxed mb-6">
+            In today&apos;s competitive digital landscape, website speed directly impacts your bottom line. Studies show that a 1-second delay in page load time can reduce conversions by 7%. Next.js websites load 3-5x faster than traditional WordPress sites, improving your Google rankings, reducing bounce rates, and increasing sales. Our Next.js expertise ensures your website is future-proof and scales with your business.
+          </p>
+          <p>
+            Want a high-performance website? <Link href="/#contact" className="text-violet-500 hover:underline">Get in touch</Link> to discuss your project.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Service Areas</h2>
+          <p className="text-lg leading-relaxed mb-4">
+            We build Next.js websites for businesses throughout Gauteng including Midrand, Johannesburg, Pretoria, Sandton, and surrounding areas.
+          </p>
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+            <li className="bg-muted/30 rounded-lg p-3 text-center">Midrand</li>
+            <li className="bg-muted/30 rounded-lg p-3 text-center">Johannesburg</li>
+            <li className="bg-muted/30 rounded-lg p-3 text-center">Pretoria</li>
+            <li className="bg-muted/30 rounded-lg p-3 text-center">Sandton</li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Key Takeaways</h2>
+          <ul className="space-y-3">
+            <li className="flex gap-3">
+              <span className="text-violet-500">•</span>
+              <span>Next.js websites load under 2 seconds, improving Google rankings and user experience significantly.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-violet-500">•</span>
+              <span>Server-Side Rendering (SSR) and Static Site Generation (SSG) ensure complete search engine indexing.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-violet-500">•</span>
+              <span>Next.js websites in South Africa cost R8,000-R25,000+ depending on complexity and features.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-violet-500">•</span>
+              <span>Automatic image optimization reduces bandwidth costs and improves mobile loading speeds.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-violet-500">•</span>
+              <span>No plugin dependencies means better security and no monthly maintenance fees.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+             <div className="border-b border-white/10 pb-6">
+                <h3 className="text-xl font-semibold mb-3">Why choose Next.js for my website?</h3>
+                <p>Next.js offers superior performance with Server-Side Rendering (SSR) and Static Site Generation (SSG), excellent SEO out of the box, automatic image optimization, and great developer experience. It powers sites like Netflix, Uber, and TikTok, proving its enterprise-grade reliability.</p>
              </div>
-             <div className="border-b border-white/10 pb-4">
-                <h3 className="text-xl font-semibold mb-2">Is Next.js good for SEO?</h3>
-                <p>Yes, Next.js supports Server-Side Rendering (SSR) and Static Site Generation (SSG), which are critical for search engine indexing and performance in the South African market.</p>
+             <div className="border-b border-white/10 pb-6">
+                <h3 className="text-xl font-semibold mb-3">Is Next.js good for SEO?</h3>
+                <p>Yes, Next.js excels at SEO with SSR and SSG for fast page loads that Google rewards with higher rankings. It includes automatic meta tag generation, sitemaps, and structured data support. Sites load in under 2 seconds, a key Google ranking factor.</p>
+             </div>
+             <div className="border-b border-white/10 pb-6">
+                <h3 className="text-xl font-semibold mb-3">How much does a Next.js website cost in South Africa?</h3>
+                <p>Next.js websites in South Africa cost R8,000-R25,000+ depending on complexity, custom features, and design requirements. While the initial investment is higher than WordPress, the superior performance, SEO benefits, and no monthly fees provide long-term value.</p>
+             </div>
+             <div className="border-b border-white/10 pb-6">
+                <h3 className="text-xl font-semibold mb-3">What is the difference between Next.js and WordPress?</h3>
+                <p>Next.js is a React framework offering better performance, security, and SEO compared to WordPress. With Next.js, there are no plugins or theme dependencies, fully custom designs, no monthly hosting fees, and superior loading speeds (under 2 seconds vs. 4-8 seconds for WordPress).</p>
              </div>
           </div>
         </section>

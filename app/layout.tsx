@@ -40,9 +40,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Mpho Moipolai' }],
   creator: 'Mpho Moipolai',
   publisher: 'Mpho Moipolai',
-  alternates: {
-    canonical: '/',
-  },
+
   robots: {
     index: true,
     follow: true,
