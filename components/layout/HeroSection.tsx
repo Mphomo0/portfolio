@@ -161,29 +161,53 @@ export default function HeroSection() {
               Available for new opportunities
             </span>
           </div>
-          {/* Main H1 */}
-          <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
-            variants={itemVariants}
+        {/* Main H1 - Answer-First Format for AI Citability */}
+        <motion.h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+          variants={itemVariants}
+        >
+          Mpho Moipolai
+          <motion.span
+            className="block brand-text-gradient"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
           >
-            Web Design Midrand
-            <motion.span
-              className="block brand-text-gradient"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-            >
-              Mpho Moipolai | Next.js Expert
-            </motion.span>
-          </motion.h1>
+            Web Design Midrand | Next.js Developer
+          </motion.span>
+        </motion.h1>
 
-          {/* Description */}
-          <motion.p
-            className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
-            variants={itemVariants}
-          >
-            I&lsquo;m {PORTFOLIO_CONFIG.name}, a Professional Web Developer specializing in **Next.js and SEO services in Midrand, South Africa**. I help startups and small businesses build fast, scalable, and AI-optimized web applications.
-          </motion.p>
+        {/* Definition Pattern - First sentence defines entity */}
+        <motion.p
+          className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4"
+          variants={itemVariants}
+        >
+          <strong className="text-foreground">Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand, South Africa</strong>, with 13+ years of experience building production-grade web applications.
+        </motion.p>
+
+        {/* Specific Metrics for AI Citability */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-4 mb-6"
+          variants={itemVariants}
+        >
+          <span className="px-3 py-1.5 text-sm bg-violet-500/10 text-violet-400 rounded-full border border-violet-500/20">
+            13+ Years Experience
+          </span>
+          <span className="px-3 py-1.5 text-sm bg-pink-500/10 text-pink-400 rounded-full border border-pink-500/20">
+            50+ Projects Delivered
+          </span>
+          <span className="px-3 py-1.5 text-sm bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
+            Specializing in Next.js & SEO
+          </span>
+        </motion.div>
+
+        {/* Value Proposition */}
+        <motion.p
+          className="text-base text-muted-foreground max-w-xl mx-auto mb-8"
+          variants={itemVariants}
+        >
+          I help startups and small businesses build fast, scalable, and AI-optimized web applications that rank higher on Google and convert visitors into customers.
+        </motion.p>
 
           {/* CTA Buttons */}
           <motion.div

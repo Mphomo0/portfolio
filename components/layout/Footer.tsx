@@ -17,7 +17,7 @@ const PORTFOLIO_CONFIG = {
 
 const footerLinks = [
   { href: '/#about', label: 'About' },
-  { href: '/#stack', label: 'Stack' },
+  { href: '/about', label: 'Full Profile' },
   { href: '/#projects', label: 'Projects' },
   { href: '/#experience', label: 'Experience' },
   { href: '/#philosophy', label: 'Philosophy' },
@@ -246,12 +246,21 @@ export function Footer() {
               ))}
             </div>
 
-            {/* Copyright */}
-            <p className="text-sm text-muted-foreground">
-              © {currentYear} {PORTFOLIO_CONFIG.name}. Built with Next.js &
-              Tailwind CSS.
-            </p>
+          {/* Copyright */}
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} {PORTFOLIO_CONFIG.name}. Built with Next.js &amp; Tailwind CSS.
+          </p>
+
+          {/* Legal Links */}
+          <div className="flex gap-4 text-sm">
+            <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
+              Terms of Service
+            </Link>
           </div>
+        </div>
         </div>
       </footer>
     </>

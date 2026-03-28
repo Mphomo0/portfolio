@@ -33,6 +33,11 @@ type Project = {
   githubUrl: string
   featured: boolean
   imageUrl: string
+  metrics?: {
+    lcp: string
+    performance: string
+    seo: string
+  }
 }
 
 const projects: Project[] = [
@@ -51,6 +56,11 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/Mphomo0/sozim',
     featured: true,
     imageUrl: '/images/projects/sozim.webp',
+    metrics: {
+      lcp: '1.2s',
+      performance: '95+',
+      seo: '100/100',
+    },
   },
   {
     title: 'Nostalgic Studio',
@@ -67,6 +77,11 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/Mphomo0/nostalgic-studio',
     featured: true,
     imageUrl: '/images/projects/nostalgic-studio.webp',
+    metrics: {
+      lcp: '1.4s',
+      performance: '98',
+      seo: '100/100',
+    },
   },
   {
     title: 'Jiyology Building & Construction Plumbing',
@@ -84,6 +99,11 @@ const projects: Project[] = [
       'https://github.com/Mphomo0/jiyology-building-construction-plumbing',
     featured: false,
     imageUrl: '/images/projects/jiyology.webp',
+    metrics: {
+      lcp: '1.1s',
+      performance: '96',
+      seo: '100/100',
+    },
   },
   {
     title: 'Didee Holdings',
@@ -100,6 +120,11 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/Mphomo0/dideeholdings',
     featured: false,
     imageUrl: '/images/projects/didee.webp',
+    metrics: {
+      lcp: '1.3s',
+      performance: '97',
+      seo: '100/100',
+    },
   },
 ]
 
@@ -192,6 +217,21 @@ export function ProjectsSection() {
                     </span>
                   ))}
                 </div>
+
+                {/* Performance Metrics */}
+                {project.metrics && (
+                  <div className='flex flex-wrap gap-2 mb-6'>
+                    <span className='px-2 py-1 text-xs bg-emerald-500/10 text-emerald-400 rounded-md border border-emerald-500/20'>
+                      LCP: {project.metrics.lcp}
+                    </span>
+                    <span className='px-2 py-1 text-xs bg-blue-500/10 text-blue-400 rounded-md border border-blue-500/20'>
+                      Performance: {project.metrics.performance}
+                    </span>
+                    <span className='px-2 py-1 text-xs bg-violet-500/10 text-violet-400 rounded-md border border-violet-500/20'>
+                      SEO: {project.metrics.seo}
+                    </span>
+                  </div>
+                )}
 
                 {/* Actions */}
                 <div className='flex items-center gap-3'>
