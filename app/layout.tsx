@@ -29,11 +29,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpho-moipolai.co.za'),
   title: {
-    default: 'Web Design Midrand | Next.js Developer & SEO Expert South Africa',
+    default: 'Web Design Midrand | Next.js Developer & SEO Expert',
     template: '%s | Mpho Moipolai',
   },
   description:
-    'Professional web design in Midrand and South Africa. Specialized in Next.js, React, and SEO. I Build high-performance websites.',
+    'Professional web design and development services in Midrand, South Africa. Specializing in Next.js, React, and SEO to build fast, scalable, and high-performing websites that rank on Google.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za',
+  },
   applicationName: 'Mpho Moipolai Portfolio',
   keywords: [
     'Web Design Midrand',

@@ -51,11 +51,12 @@ export function Navbar() {
           <Link href='/' className='flex items-center gap-2 group'>
             <Image
               src='/images/logo/logo.webp'
-              alt='Logo'
+              alt='Mpho Moipolai Logo'
               width={200}
               height={150}
-              className='object-contain w-full h-full'
+              className='object-contain w-auto h-auto'
               priority
+              loading="eager"
             />
           </Link>
 

@@ -175,9 +175,9 @@ export function Footer() {
                 <Image
                   src="/images/logo/logo.webp"
                   alt="Mpho Moipolai Logo"
-                  width={160}
-                  height={160}
-                  className="w-full h-full object-contain"
+              width={160}
+              height={120}
+                  className="object-contain"
                 />
               </Link>
               <p className="text-sm text-muted-foreground">

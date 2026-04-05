@@ -170,9 +170,9 @@ export function ProjectsSection() {
               <div className='h-56 relative overflow-hidden'>
                 <Image
                   src={project.imageUrl}
-                  alt={project.title}
+                  alt={`${project.title} - Next.js website project by Mpho Moipolai`}
                   fill
-                  sizes='(max-width: 768px) 100vw, 50vw'
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                   className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
                 />
                 {/* Subtle overlay for polish */}
