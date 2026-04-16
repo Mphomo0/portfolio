@@ -53,8 +53,9 @@ export function Navbar() {
               src='/images/logo/logo.webp'
               alt='Mpho Moipolai Logo'
               width={200}
-              height={150}
+              height={29}
               className='object-contain w-auto h-auto'
+              style={{ aspectRatio: '1834 / 262' }}
               priority
               loading="eager"
             />

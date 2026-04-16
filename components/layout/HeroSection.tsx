@@ -143,8 +143,14 @@ export default function HeroSection() {
     >
       {/* Animated Background - CSS only for faster LCP */}
       <div className="absolute inset-0 opacity-40 pointer-events-none">
-        <div className="absolute top-1/4 -left-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-20 animate-float" />
-        <div className="absolute bottom-1/4 -right-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-10 animate-float-delayed" />
+        <div 
+          className="absolute top-1/4 -left-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-20 animate-float" 
+          style={{ willChange: 'transform' }}
+        />
+        <div 
+          className="absolute bottom-1/4 -right-40 w-125 h-125 rounded-full blur-3xl brand-gradient opacity-10 animate-float-delayed" 
+          style={{ willChange: 'transform' }}
+        />
       </div>
 
       <div className="container mx-auto px-6 py-32 relative z-10">

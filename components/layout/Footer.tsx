@@ -175,9 +175,10 @@ export function Footer() {
                 <Image
                   src="/images/logo/logo.webp"
                   alt="Mpho Moipolai Logo"
-              width={160}
-              height={120}
-                  className="object-contain"
+                  width={160}
+                  height={23}
+                  className="object-contain w-auto h-auto"
+                  style={{ aspectRatio: '1834 / 262' }}
                 />
               </Link>
               <p className="text-sm text-muted-foreground">
