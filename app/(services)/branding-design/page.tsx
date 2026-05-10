@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Branding Design Midrand | Logo Brand Identity',
-  description: 'Professional branding design in Midrand. Logo design, brand identity, brand guidelines for South African businesses.',
+  title: 'Branding Design | Logo & Brand Identity',
+  description: 'Professional branding design in Midrand, South Africa. Logo design and brand identity for businesses.',
 }
 
 export default function BrandingDesignPage() {

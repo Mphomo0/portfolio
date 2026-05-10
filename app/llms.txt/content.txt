@@ -1,0 +1,103 @@
+# Mpho Moipolai | Web Design & SEO Services in Midrand
+
+## Site Overview
+
+Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand, Gauteng, South Africa. With 13+ years of experience, I build fast, SEO-optimized websites using Next.js, React, and modern web technologies.
+
+## Services Offered
+
+### Web Design & Development
+- Custom website design in Midrand, South Africa
+- Next.js website development with SSR/SSG
+- Responsive, mobile-first design
+- Fast-loading, SEO-optimized websites
+
+### SEO Services
+- Local SEO for Midrand and Gauteng businesses
+- Keyword research and on-page optimization
+- Technical SEO audits
+- Google Business Profile optimization
+
+### Ecommerce Development
+- Custom online stores in Midrand
+- Payment gateway integration (PayFast, Peach Payments, Paystack, Yoco)
+- Inventory management systems
+- Secure, high-converting checkout
+
+### UX/UI Design
+- User research and persona development
+- Wireframes and prototypes
+- Visual design in Figma
+- Usability testing
+
+### Branding & Design
+- Logo design
+- Brand identity creation
+- Brand guidelines
+- Business card and stationery design
+
+### Digital Marketing
+- Social media management (Facebook, Instagram, LinkedIn, TikTok)
+- Social media advertising campaigns
+- Content creation and scheduling
+- Performance analytics and reporting
+
+### Web Hosting & Maintenance
+- Fast, reliable hosting with 99.9% uptime
+- Free SSL certificates
+- Daily automated backups
+- 24/7 technical support
+- Security monitoring and updates
+
+## Pricing Overview
+
+- **Basic Website**: R3,000 - R15,000
+- **Ecommerce Website**: R8,000 - R30,000+
+- **Next.js Website**: R8,000 - R25,000+
+- **SEO Services**: R2,000 - R10,000/month
+- **Social Media Management**: R3,000 - R8,000/month per platform
+- **Web Hosting**: R99 - R5,000/month
+- **Web Maintenance**: R500 - R2,500/month
+
+## Service Areas
+
+Primary service area: Midrand, Gauteng, South Africa
+
+Extended coverage: Johannesburg, Pretoria, Sandton, Centurion, and surrounding Gauteng areas.
+
+International clients welcome.
+
+## Contact
+
+- Email: contact@mpho-moipolai.co.za
+- Location: Midrand, Gauteng, South Africa
+
+## Page Index
+
+- **Home** (/) - Portfolio overview, services, contact
+- **About** (/about) - Personal background, skills, certifications
+- **Web Design Midrand** (/web-design-midrand) - Web design services
+- **Next.js Website Design** (/nextjs-website-design) - Next.js development
+- **SEO Services Midrand** (/seo-services-midrand) - Search engine optimization
+- **Ecommerce Development** (/ecommerce-website-development) - Online store development
+- **UX/UI Design** (/ux-ui-design) - User experience design
+- **Branding Design** (/branding-design) - Logo and brand identity
+- **Social Media Ads** (/social-media-ads) - Paid advertising
+- **Social Media Marketing** (/social-media-marketing) - Organic social media
+- **Web Hosting** (/web-hosting) - Hosting services
+- **Web Maintenance** (/web-maintenance) - Website support
+- **Privacy Policy** (/privacy) - Privacy information
+- **Terms of Service** (/terms) - Terms and conditions
+
+## Technical Expertise
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Express, PostgreSQL, MongoDB, Prisma
+- **Tools**: Git, GitHub, Vercel, Azure, AWS, Figma, VS Code
+- **Marketing**: Google Analytics, Search Console, SEO, GEO/AEO
+
+## Credentials
+
+- Graphic Design, Multimedia & Web Programming - Atti College (2012)
+- Edesign, Multimedia & Solution Development - Att (2013)
+- FullStack Web Development - HyperionDev (2023)

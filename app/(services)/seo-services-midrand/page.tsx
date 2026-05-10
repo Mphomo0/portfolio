@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'SEO Services Midrand | Google Ranking Expert',
-  description: 'Expert SEO in Midrand. Local SEO, keyword research, on-page optimization. Rank higher on Google in South Africa.',
+  title: 'SEO Services Midrand | Rank Higher on Google',
+  description: 'Expert SEO in Midrand, South Africa. Local SEO, keyword research, and on-page optimization to rank higher on Google.',
 }
 
 export default function SEOServicesMidrandPage() {

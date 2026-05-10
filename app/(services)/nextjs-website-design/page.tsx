@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Next.js Developer Midrand | High-Performance Websites',
-  description: 'Fast, secure Next.js websites in Midrand. Server-side rendering, Static Site Generation for optimal SEO. South Africa.',
+  title: 'Next.js Developer | High-Performance Websites',
+  description: 'Next.js websites in Midrand. Server-side rendering, static generation, and built-in SEO for South African businesses.',
 }
 
 export default function NextjsWebsiteDesignPage() {

@@ -29,29 +29,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpho-moipolai.co.za'),
   title: {
-    default: 'Web Design Midrand | Next.js Developer & SEO Expert',
+    default: 'Mpho Moipolai | Web Design & SEO in Midrand',
     template: '%s | Mpho Moipolai',
   },
   description:
-    'Professional web design and development services in Midrand, South Africa. Specializing in Next.js, React, and SEO to build fast, scalable, and high-performing websites that rank on Google.',
+    'Web design and SEO services in Midrand, South Africa. Next.js developer specializing in fast, high-ranking websites. Free consultation.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za',
   },
   applicationName: 'Mpho Moipolai Portfolio',
   keywords: [
     'Web Design Midrand',
-    'Website Design Midrand',
-    'Web Design South Africa',
-    'Next.js Website Design',
-    'UI/UX Design Agency South Africa',
-    'SEO Services Midrand',
-    'Ecommerce Website Development South Africa',
-    'Professional Web Developer Midrand',
+    'SEO Services South Africa',
+    'Next.js Developer',
+    'Website Design Gauteng',
+    'Ecommerce Development',
   ],
   authors: [{ name: 'Mpho Moipolai' }],
   creator: 'Mpho Moipolai',
   publisher: 'Mpho Moipolai',
-
   robots: {
     index: true,
     follow: true,
@@ -66,9 +62,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://www.mpho-moipolai.co.za',
-    title: 'Web Design Midrand | Mpho Moipolai | Next.js Developer',
+    title: 'Mpho Moipolai | Web Design & SEO in Midrand',
     description:
-      'Expert web design and SEO services in Midrand. Building fast, scalable, and AI-optimized web applications with Next.js.',
+      'Web design and SEO services in Midrand, South Africa. Next.js developer building fast websites that rank.',
     siteName: 'Mpho Moipolai',
     images: [
       {
@@ -81,9 +77,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Design Midrand | Mpho Moipolai',
+    title: 'Mpho Moipolai | Web Design & SEO Midrand',
     description:
-      'Professional Web Developer specializing in Next.js and SEO for Midrand businesses.',
+      'Next.js developer and SEO specialist in Midrand, South Africa.',
     images: ['/images/og-image.jpg'],
     creator: '@gift187',
   },

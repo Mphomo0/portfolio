@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Ecommerce Development Midrand | Online Store Builder',
-  description: 'Custom ecommerce development in Midrand. Secure online stores with PayFast, Peach Payments. Sell online in South Africa.',
+  title: 'Ecommerce Development | Secure Online Stores',
+  description: 'Custom ecommerce development in Midrand. Secure online stores with PayFast and Peach Payments integration.',
 }
 
 export default function EcommerceWebsiteDevelopmentPage() {

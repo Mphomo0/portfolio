@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Web Hosting Midrand | Fast Reliable Hosting',
-  description: 'Fast web hosting in Midrand. 99.9% uptime, SSL, daily backups. Reliable hosting for South African businesses.',
+  title: 'Web Hosting | Fast & Reliable Hosting',
+  description: 'Fast web hosting in Midrand, South Africa. 99.9% uptime, free SSL, daily backups, and 24/7 support.',
 }
 
 export default function WebHostingPage() {

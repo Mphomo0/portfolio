@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Web Maintenance Midrand | Website Support',
-  description: 'Web maintenance in Midrand. Updates, security, performance optimization. Keep your South African website secure and fast.',
+  title: 'Web Maintenance | Website Support & Security',
+  description: 'Web maintenance in Midrand, South Africa. Updates, security monitoring, and performance optimization.',
 }
 
 export default function WebMaintenancePage() {

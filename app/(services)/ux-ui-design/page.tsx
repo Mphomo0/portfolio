@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'UX/UI Design Midrand | User Experience Expert',
-  description: 'Expert UX/UI design in Midrand. User research, wireframes, prototypes for web and mobile apps. South Africa.',
+  title: 'UX/UI Design | User Experience Experts',
+  description: 'UX/UI design in Midrand, South Africa. User research, wireframes, and prototypes for web and mobile apps.',
 }
 
 export default function UXUIDesignPage() {

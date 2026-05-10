@@ -14,13 +14,13 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Mpho Moipolai | Full Stack Web Developer & SEO Specialist',
+  title: 'About Mpho Moipolai | Full Stack Web Developer',
   description:
-    'Learn about Mpho Moipolai, a Full Stack Web Developer and SEO Specialist based in Midrand, South Africa. 13+ years of experience building production-grade web applications with Next.js, React, and modern web technologies.',
+    'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years building Next.js websites that rank.',
   openGraph: {
-    title: 'About Mpho Moipolai | Full Stack Web Developer',
+    title: 'About Mpho Moipolai | Web Developer',
     description:
-      'Full Stack Web Developer and SEO Specialist based in Midrand, South Africa. 13+ years of experience building production-grade web applications.',
+      'Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years of experience.',
     type: 'profile',
   },
 }

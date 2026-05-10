@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Social Media Ads Midrand | Facebook Instagram Ads',
-  description: 'Targeted social media ads in Midrand. Facebook, Instagram, LinkedIn advertising. High-converting campaigns for South African businesses.',
+  title: 'Social Media Ads | Facebook & Instagram Advertising',
+  description: 'Targeted social media ads in Midrand. High-converting Facebook, Instagram, and LinkedIn campaigns for South African businesses.',
 }
 
 export default function SocialMediaAdsPage() {

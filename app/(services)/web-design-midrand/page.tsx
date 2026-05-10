@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Web Design Midrand | Professional Website Developer',
-  description: 'Professional web design in Midrand, South Africa. Fast, SEO-optimized websites for startups and small businesses. Free consultation.',
+  title: 'Web Design Midrand | Fast, SEO-Optimized Websites',
+  description: 'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses.',
 }
 
 export default function WebDesignMidrandPage() {
