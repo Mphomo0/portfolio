@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Web Hosting | Fast & Reliable Hosting',
   description: 'Fast web hosting in Midrand, South Africa. 99.9% uptime, free SSL, daily backups, and 24/7 support.',
+  openGraph: {
+    title: 'Web Hosting South Africa | Fast & Secure Servers',
+    description: 'Reliable web hosting with 99.9% uptime. Free SSL, daily backups, and 24/7 support for South African businesses.',
+  },
 }
 
 export default function WebHostingPage() {

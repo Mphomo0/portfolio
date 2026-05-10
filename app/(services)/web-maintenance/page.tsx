@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Web Maintenance | Website Support & Security',
   description: 'Web maintenance in Midrand, South Africa. Updates, security monitoring, and performance optimization.',
+  openGraph: {
+    title: 'Website Maintenance | Keep Your Site Secure & Fast',
+    description: 'Ongoing web maintenance services in Midrand. Security updates, performance optimization, and 24/7 support.',
+  },
 }
 
 export default function WebMaintenancePage() {

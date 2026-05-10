@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Next.js Developer | High-Performance Websites',
   description: 'Next.js websites in Midrand. Server-side rendering, static generation, and built-in SEO for South African businesses.',
+  openGraph: {
+    title: 'Next.js Website Development | Fast & SEO-Friendly',
+    description: 'Build your website with Next.js for lightning-fast speed, excellent SEO, and seamless user experience.',
+  },
 }
 
 export default function NextjsWebsiteDesignPage() {

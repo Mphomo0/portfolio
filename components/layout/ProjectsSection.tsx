@@ -170,7 +170,7 @@ export function ProjectsSection() {
               <div className='h-56 relative overflow-hidden'>
                 <Image
                   src={project.imageUrl}
-                  alt={`${project.title} - Next.js website project by Mpho Moipolai`}
+                  alt={`${project.title}: ${project.description.slice(0, 80)}... - Website built by Mpho Moipolai using ${project.tech.slice(0, 3).join(', ')}`}
                   fill
                   sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                   className='object-cover object-top transition-transform duration-500 group-hover:scale-105'

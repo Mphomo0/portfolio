@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Branding Design | Logo & Brand Identity',
   description: 'Professional branding design in Midrand, South Africa. Logo design and brand identity for businesses.',
+  openGraph: {
+    title: 'Branding & Logo Design | Professional Brand Identity',
+    description: 'Create a memorable brand with professional logo design and brand identity services in Midrand, South Africa.',
+  },
 }
 
 export default function BrandingDesignPage() {

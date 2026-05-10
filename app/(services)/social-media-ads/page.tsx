@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Social Media Ads | Facebook & Instagram Advertising',
   description: 'Targeted social media ads in Midrand. High-converting Facebook, Instagram, and LinkedIn campaigns for South African businesses.',
+  openGraph: {
+    title: 'Social Media Advertising | High-Converting Ad Campaigns',
+    description: 'Targeted Facebook, Instagram, and LinkedIn ads for Midrand businesses. ROI-focused campaigns with measurable results.',
+  },
 }
 
 export default function SocialMediaAdsPage() {

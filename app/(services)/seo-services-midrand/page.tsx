@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'SEO Services Midrand | Rank Higher on Google',
   description: 'Expert SEO in Midrand, South Africa. Local SEO, keyword research, and on-page optimization to rank higher on Google.',
+  openGraph: {
+    title: 'SEO Services in Midrand | Rank #1 on Google',
+    description: 'Professional SEO services for Midrand businesses. Local SEO, technical audits, and content optimization with proven results.',
+  },
 }
 
 export default function SEOServicesMidrandPage() {

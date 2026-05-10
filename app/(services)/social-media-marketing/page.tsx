@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Social Media Marketing | Grow Your Brand',
   description: 'Social media marketing in Midrand. Facebook, Instagram, and LinkedIn management with content creation.',
+  openGraph: {
+    title: 'Social Media Marketing | Build Your Online Presence',
+    description: 'Grow your brand with expert social media management. Content creation and strategy for Facebook, Instagram, and LinkedIn.',
+  },
 }
 
 export default function SocialMediaMarketingPage() {

@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Ecommerce Development | Secure Online Stores',
   description: 'Custom ecommerce development in Midrand. Secure online stores with PayFast and Peach Payments integration.',
+  openGraph: {
+    title: 'Ecommerce Website Development | Sell Online in South Africa',
+    description: 'Custom online stores with PayFast, Peach Payments. Start selling online with a secure, high-converting ecommerce website.',
+  },
 }
 
 export default function EcommerceWebsiteDevelopmentPage() {

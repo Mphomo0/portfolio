@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'UX/UI Design | User Experience Experts',
   description: 'UX/UI design in Midrand, South Africa. User research, wireframes, and prototypes for web and mobile apps.',
+  openGraph: {
+    title: 'UX/UI Design Services | User-Centered Digital Products',
+    description: 'Expert UX/UI design in Midrand. User research, wireframes, and visual design for websites and mobile applications.',
+  },
 }
 
 export default function UXUIDesignPage() {

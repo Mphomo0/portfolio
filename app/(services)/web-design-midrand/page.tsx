@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Web Design Midrand | Fast, SEO-Optimized Websites',
   description: 'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses.',
+  openGraph: {
+    title: 'Web Design in Midrand | Professional Websites',
+    description: 'Custom web design services in Midrand, Gauteng. Fast, responsive websites built with Next.js for South African businesses.',
+  },
 }
 
 export default function WebDesignMidrandPage() {

@@ -6,6 +6,7 @@ import { ProjectsSection } from '@/components/layout/ProjectsSection'
 import TechStackSection from '@/components/layout/TechStackSection'
 import ContactSection from '@/components/layout/ContactSection'
 import { FAQSection } from '@/components/layout/FAQSection'
+import { TestimonialsSection } from '@/components/layout/TestimonialsSection'
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <AboutSection />
       <TechStackSection />
       <ProjectsSection />
+      <TestimonialsSection />
       <ExperienceSection />
       <PhilosophySection />
       <FAQSection />
