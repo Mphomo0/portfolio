@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
