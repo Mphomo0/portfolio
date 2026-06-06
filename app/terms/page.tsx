@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 import { ArrowLeft, FileText, Scale, Briefcase, AlertTriangle, CheckCircle, XCircle } from 'lucide-react'
 
@@ -26,10 +25,8 @@ export default function TermsPage() {
 
   return (
     <>
-      <Script
-        id="terms-schema"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(termsSchema) }}
       />
 

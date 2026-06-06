@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Web Hosting | Fast & Reliable Hosting',
   description: 'Fast web hosting in Midrand, South Africa. 99.9% uptime, free SSL, daily backups, and 24/7 support.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/web-hosting',
+  },
   openGraph: {
     title: 'Web Hosting South Africa | Fast & Secure Servers',
     description: 'Reliable web hosting with 99.9% uptime. Free SSL, daily backups, and 24/7 support for South African businesses.',
@@ -13,8 +15,15 @@ export const metadata: Metadata = {
 
 export default function WebHostingPage() {
   const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mpho-moipolai.co.za' },
+          { '@type': 'ListItem', position: 2, name: 'Web Hosting', item: 'https://www.mpho-moipolai.co.za/web-hosting' },
+        ],
+      },
       {
         "@type": "Service",
         "name": "Web Hosting",
@@ -68,8 +77,7 @@ export default function WebHostingPage() {
 
   return (
     <>
-      <Script
-        id="hosting-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
@@ -164,6 +172,14 @@ export default function WebHostingPage() {
              </div>
           </div>
         </section>
+        <nav aria-label="Related services" className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Related Services</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/web-maintenance" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Maintenance</Link>
+            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+          </div>
+        </nav>
       </article>
     </>
   )

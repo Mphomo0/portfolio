@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Web Maintenance | Website Support & Security',
   description: 'Web maintenance in Midrand, South Africa. Updates, security monitoring, and performance optimization.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/web-maintenance',
+  },
   openGraph: {
     title: 'Website Maintenance | Keep Your Site Secure & Fast',
     description: 'Ongoing web maintenance services in Midrand. Security updates, performance optimization, and 24/7 support.',
@@ -13,8 +15,15 @@ export const metadata: Metadata = {
 
 export default function WebMaintenancePage() {
   const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mpho-moipolai.co.za' },
+          { '@type': 'ListItem', position: 2, name: 'Web Maintenance', item: 'https://www.mpho-moipolai.co.za/web-maintenance' },
+        ],
+      },
       {
         "@type": "Service",
         "name": "Web Maintenance",
@@ -68,8 +77,7 @@ export default function WebMaintenancePage() {
 
   return (
     <>
-      <Script
-        id="maintenance-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
@@ -164,6 +172,14 @@ export default function WebMaintenancePage() {
              </div>
           </div>
         </section>
+        <nav aria-label="Related services" className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Related Services</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/web-hosting" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Hosting</Link>
+            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
+          </div>
+        </nav>
       </article>
     </>
   )

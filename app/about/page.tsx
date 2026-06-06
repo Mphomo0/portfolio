@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 import {
   ArrowLeft,
@@ -17,6 +16,9 @@ export const metadata: Metadata = {
   title: 'About Mpho Moipolai | Full Stack Web Developer',
   description:
     'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years building Next.js websites that rank.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/about',
+  },
   openGraph: {
     title: 'About Mpho Moipolai | Web Developer',
     description:
@@ -176,10 +178,8 @@ export default function AboutPage() {
 
   return (
     <>
-      <Script
-        id="about-schema"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
       />
 

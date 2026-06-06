@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'UX/UI Design | User Experience Experts',
   description: 'UX/UI design in Midrand, South Africa. User research, wireframes, and prototypes for web and mobile apps.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/ux-ui-design',
+  },
   openGraph: {
     title: 'UX/UI Design Services | User-Centered Digital Products',
     description: 'Expert UX/UI design in Midrand. User research, wireframes, and visual design for websites and mobile applications.',
@@ -13,8 +15,15 @@ export const metadata: Metadata = {
 
 export default function UXUIDesignPage() {
   const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mpho-moipolai.co.za' },
+          { '@type': 'ListItem', position: 2, name: 'UX/UI Design', item: 'https://www.mpho-moipolai.co.za/ux-ui-design' },
+        ],
+      },
       {
         "@type": "Service",
         "name": "UX/UI Design",
@@ -68,8 +77,7 @@ export default function UXUIDesignPage() {
 
   return (
     <>
-      <Script
-        id="uxui-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
@@ -164,6 +172,15 @@ export default function UXUIDesignPage() {
              </div>
           </div>
         </section>
+        <nav aria-label="Related services" className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Related Services</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link href="/branding-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Branding &amp; Design</Link>
+            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+            <Link href="/nextjs-website-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Next.js Website Design</Link>
+          </div>
+        </nav>
       </article>
     </>
   )

@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Branding Design | Logo & Brand Identity',
   description: 'Professional branding design in Midrand, South Africa. Logo design and brand identity for businesses.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/branding-design',
+  },
   openGraph: {
     title: 'Branding & Logo Design | Professional Brand Identity',
     description: 'Create a memorable brand with professional logo design and brand identity services in Midrand, South Africa.',
@@ -13,8 +15,15 @@ export const metadata: Metadata = {
 
 export default function BrandingDesignPage() {
   const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mpho-moipolai.co.za' },
+          { '@type': 'ListItem', position: 2, name: 'Branding & Design', item: 'https://www.mpho-moipolai.co.za/branding-design' },
+        ],
+      },
       {
         "@type": "Service",
         "name": "Branding & Design",
@@ -68,8 +77,7 @@ export default function BrandingDesignPage() {
 
   return (
     <>
-      <Script
-        id="branding-design-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
@@ -164,6 +172,15 @@ export default function BrandingDesignPage() {
              </div>
           </div>
         </section>
+        <nav aria-label="Related services" className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Related Services</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link href="/ux-ui-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">UX/UI Design</Link>
+            <Link href="/social-media-marketing" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Marketing</Link>
+            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+          </div>
+        </nav>
       </article>
     </>
   )

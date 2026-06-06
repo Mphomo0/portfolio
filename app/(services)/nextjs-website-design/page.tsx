@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Next.js Developer | High-Performance Websites',
   description: 'Next.js websites in Midrand. Server-side rendering, static generation, and built-in SEO for South African businesses.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/nextjs-website-design',
+  },
   openGraph: {
     title: 'Next.js Website Development | Fast & SEO-Friendly',
     description: 'Build your website with Next.js for lightning-fast speed, excellent SEO, and seamless user experience.',
@@ -13,8 +15,15 @@ export const metadata: Metadata = {
 
 export default function NextjsWebsiteDesignPage() {
   const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mpho-moipolai.co.za' },
+          { '@type': 'ListItem', position: 2, name: 'Next.js Website Design', item: 'https://www.mpho-moipolai.co.za/nextjs-website-design' },
+        ],
+      },
       {
         "@type": "Service",
         "name": "Next.js Website Design",
@@ -68,8 +77,7 @@ export default function NextjsWebsiteDesignPage() {
 
   return (
     <>
-      <Script
-        id="nextjs-design-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
@@ -164,6 +172,16 @@ export default function NextjsWebsiteDesignPage() {
              </div>
           </div>
         </section>
+        <nav aria-label="Related services" className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Related Services</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
+            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+            <Link href="/ux-ui-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">UX/UI Design</Link>
+            <Link href="/web-hosting" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Hosting</Link>
+          </div>
+        </nav>
       </article>
     </>
   )

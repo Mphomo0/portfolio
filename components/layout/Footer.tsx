@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import Script from 'next/script'
 
 const PORTFOLIO_CONFIG = {
   name: 'Mpho Moipolai',
@@ -132,31 +131,8 @@ const socialLinks = [
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: PORTFOLIO_CONFIG.name,
-    url: 'https://mpho-moipolai.co.za',
-    jobTitle: 'Full Stack Web Developer',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Johannesburg',
-      addressRegion: 'Gauteng',
-      addressCountry: 'ZA',
-    },
-    sameAs: Object.values(PORTFOLIO_CONFIG.social),
-  }
-
   return (
     <>
-      <Script
-        id="footer-structured-data"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
-        }}
-      />
 
       <footer
         className="py-12 bg-background border-t border-border/50"
