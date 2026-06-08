@@ -295,7 +295,7 @@ const globalSchema = {
         {
           '@type': 'Review',
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          author: { '@type': 'Person', name: 'Thabo Molefe' },
+          author: { '@type': 'Person', name: 'Ohentse Diseko' },
           reviewBody:
             'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
           itemReviewed: {
@@ -319,9 +319,9 @@ const globalSchema = {
         {
           '@type': 'Review',
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          author: { '@type': 'Person', name: 'Lucky Nkosi' },
+          author: { '@type': 'Person', name: 'Vusi Jiya' },
           reviewBody:
-            'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Midrand and Gauteng was exactly what we needed.',
+            'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Soweto and Gauteng was exactly what we needed.',
           itemReviewed: {
             '@type': 'Service',
             name: 'Web Design & Local SEO',

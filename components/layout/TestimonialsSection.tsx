@@ -4,8 +4,8 @@ import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Thabo Molefe',
-    role: 'Founder',
+    name: 'Ohentse Diseko',
+    role: 'Managing Director',
     company: 'Sozim Trading & Consultancy',
     quote:
       'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
@@ -22,11 +22,11 @@ const testimonials = [
     service: 'Next.js Website Design',
   },
   {
-    name: 'Lucky Nkosi',
+    name: 'Vusi Jiya',
     role: 'Managing Director',
     company: 'Jiyology Building & Plumbing',
     quote:
-      'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Midrand and Gauteng was exactly what we needed.',
+      'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Soweto and Gauteng was exactly what we needed.',
     rating: 5,
     service: 'Web Design & Local SEO',
   },
