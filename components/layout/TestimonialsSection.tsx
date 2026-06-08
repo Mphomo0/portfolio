@@ -10,12 +10,12 @@ const testimonials = [
     quote:
       'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
     rating: 5,
-    service: 'Ecommerce Website Development',
+    service: 'Website Development',
   },
   {
-    name: 'Sarah van der Berg',
-    role: 'Creative Director',
-    company: 'Nostalgic Studio',
+    name: 'Vormmia Sikaundi',
+    role: 'Managing Director',
+    company: 'Tanosa Group',
     quote:
       'Working with Mpho was seamless. His Next.js expertise combined with SEO knowledge helped our agency website achieve exceptional Core Web Vitals scores and organic visibility.',
     rating: 5,

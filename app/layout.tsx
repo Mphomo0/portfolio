@@ -300,14 +300,14 @@ const globalSchema = {
             'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
           itemReviewed: {
             '@type': 'Service',
-            name: 'Ecommerce Website Development',
+            name: 'Website Development',
             provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
           },
         },
         {
           '@type': 'Review',
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          author: { '@type': 'Person', name: 'Sarah van der Berg' },
+          author: { '@type': 'Person', name: 'Vormmia Sikaundi' },
           reviewBody:
             'Working with Mpho was seamless. His Next.js expertise combined with SEO knowledge helped our agency website achieve exceptional Core Web Vitals scores and organic visibility.',
           itemReviewed: {
