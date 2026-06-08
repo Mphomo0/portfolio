@@ -61,7 +61,7 @@ export default function WebDesignMidrandPage() {
         ],
         offers: {
           '@type': 'Offer',
-          price: 'R3,000 - R15,000+',
+          price: 'R3,500 - R15,000+',
           priceCurrency: 'ZAR',
           availableAtOrFrom: {
             '@type': 'LocalBusiness',
@@ -77,7 +77,7 @@ export default function WebDesignMidrandPage() {
             name: 'How much does a website cost in Midrand?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Website costs in Midrand range from R3,000-R15,000+ depending on complexity. Basic business websites start at R3,000, while e-commerce sites range from R8,000-R15,000 or more.',
+              text: 'Website costs in Midrand range from R3,500-R15,000+ depending on complexity. Basic business websites start at R3,500, while e-commerce sites range from R8,000-R15,000 or more.',
             },
           },
           {
@@ -197,7 +197,7 @@ export default function WebDesignMidrandPage() {
             <li className="flex gap-3">
               <span className="text-violet-500">•</span>
               <span>
-                Professional web design in Midrand costs R3,000-R15,000+
+                Professional web design in Midrand costs R3,500-R15,000+
                 depending on complexity and features required.
               </span>
             </li>
@@ -242,8 +242,8 @@ export default function WebDesignMidrandPage() {
                 How much does a website cost in Midrand?
               </h3>
               <p>
-                Website costs in Midrand range from R3,000-R15,000+ depending
-                on complexity. Basic business websites start at R3,000, while
+                Website costs in Midrand range from R3,500-R15,000+ depending
+                on complexity. Basic business websites start at R3,500, while
                 e-commerce sites range from R8,000-R15,000 or more. Factors
                 include design complexity, number of pages, functionality, and
                 content management system requirements.
