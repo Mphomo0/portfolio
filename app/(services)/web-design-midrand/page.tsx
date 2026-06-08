@@ -61,7 +61,7 @@ export default function WebDesignMidrandPage() {
         ],
         offers: {
           '@type': 'Offer',
-          priceRange: 'R3,000 - R15,000+',
+          price: 'R3,000 - R15,000+',
           priceCurrency: 'ZAR',
           availableAtOrFrom: {
             '@type': 'LocalBusiness',

@@ -61,7 +61,7 @@ export default function SEOServicesMidrandPage() {
         ],
         offers: {
           '@type': 'Offer',
-          priceRange: 'R2,000 - R10,000/month',
+          price: 'R2,000 - R10,000/month',
           priceCurrency: 'ZAR',
           availableAtOrFrom: {
             '@type': 'LocalBusiness',
