@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Branding Design | Logo & Brand Identity',
-  description: 'Professional branding design in Midrand, South Africa. Logo design and brand identity for businesses.',
+  description: 'Professional branding design in Midrand, South Africa. Strategic logo design and brand identity services that make your business memorable.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/branding-design',
   },
   openGraph: {
     title: 'Branding & Logo Design | Professional Brand Identity',
     description: 'Create a memorable brand with professional logo design and brand identity services in Midrand, South Africa.',
+    url: 'https://www.mpho-moipolai.co.za/branding-design',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Branding Design - Logo & Brand Identity Services',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

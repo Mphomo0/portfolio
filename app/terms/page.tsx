@@ -4,7 +4,26 @@ import { ArrowLeft, FileText, Scale, Briefcase, AlertTriangle, CheckCircle, XCir
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Mpho Moipolai',
-  description: 'Terms of service for mpho-moipolai.co.za. Read the terms and conditions for using our web design and SEO services in South Africa.',
+  description: 'Terms of service for mpho-moipolai.co.za. Review the terms and conditions for using our web design, SEO, and digital services in South Africa.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za/terms',
+  },
+  openGraph: {
+    title: 'Terms of Service | Mpho Moipolai',
+    description: 'Terms of service for mpho-moipolai.co.za. Review the terms and conditions for using our web design and SEO services in South Africa.',
+    url: 'https://www.mpho-moipolai.co.za/terms',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Terms of Service - Mpho Moipolai Web Design & SEO',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
+  },
   robots: {
     index: true,
     follow: true,

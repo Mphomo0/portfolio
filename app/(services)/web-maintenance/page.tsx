@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Web Maintenance | Website Support & Security',
-  description: 'Web maintenance in Midrand, South Africa. Updates, security monitoring, and performance optimization.',
+  description: 'Professional web maintenance in Midrand, South Africa. Security monitoring, performance optimization, regular updates, and expert technical support.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/web-maintenance',
   },
   openGraph: {
     title: 'Website Maintenance | Keep Your Site Secure & Fast',
     description: 'Ongoing web maintenance services in Midrand. Security updates, performance optimization, and 24/7 support.',
+    url: 'https://www.mpho-moipolai.co.za/web-maintenance',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Web Maintenance - Professional Website Support & Security',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

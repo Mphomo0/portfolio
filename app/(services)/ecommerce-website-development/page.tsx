@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Ecommerce Development | Secure Online Stores',
-  description: 'Custom ecommerce development in Midrand. Secure online stores with PayFast and Peach Payments integration.',
+  description: 'Custom ecommerce development in Midrand, South Africa. Secure online stores with PayFast and Peach Payments integration for growing businesses.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/ecommerce-website-development',
   },
   openGraph: {
     title: 'Ecommerce Website Development | Sell Online in South Africa',
     description: 'Custom online stores with PayFast, Peach Payments. Start selling online with a secure, high-converting ecommerce website.',
+    url: 'https://www.mpho-moipolai.co.za/ecommerce-website-development',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Ecommerce Development - Secure Online Stores South Africa',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

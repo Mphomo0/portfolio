@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: 'About Mpho Moipolai | Full Stack Web Developer',
   description:
-    'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years building Next.js websites that rank.',
+    'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years building Next.js websites that rank on Google.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/about',
   },
@@ -23,6 +23,17 @@ export const metadata: Metadata = {
     title: 'About Mpho Moipolai | Web Developer',
     description:
       'Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years of experience.',
+    url: 'https://www.mpho-moipolai.co.za/about',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'About Mpho Moipolai - Full Stack Web Developer & SEO Specialist',
+      },
+    ],
+    locale: 'en_ZA',
     type: 'profile',
   },
 }

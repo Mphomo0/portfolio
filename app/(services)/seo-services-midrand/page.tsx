@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'SEO Services Midrand | Rank Higher on Google',
   description:
-    'Expert SEO in Midrand, South Africa. Local SEO, keyword research, and on-page optimization to rank higher on Google.',
+    'Expert SEO in Midrand, South Africa. Local SEO, keyword research, technical audits, and on-page optimization to rank higher on Google and grow your business.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/seo-services-midrand',
   },
@@ -12,6 +12,18 @@ export const metadata: Metadata = {
     title: 'SEO Services in Midrand | Rank #1 on Google',
     description:
       'Professional SEO services for Midrand businesses. Local SEO, technical audits, and content optimization with proven results.',
+    url: 'https://www.mpho-moipolai.co.za/seo-services-midrand',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SEO Services Midrand - Rank Higher on Google',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

@@ -161,56 +161,7 @@ const homePageSchema = {
       creator: { '@id': 'https://www.mpho-moipolai.co.za/#person' },
       keywords: 'Next.js, TypeScript, Tailwind CSS',
     },
-    // Aggregate rating from client testimonials
-    {
-      '@type': 'Organization',
-      '@id': 'https://www.mpho-moipolai.co.za/#organization',
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5',
-        reviewCount: '3',
-        bestRating: '5',
-        worstRating: '1',
-      },
-      review: [
-        {
-          '@type': 'Review',
-          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          author: { '@type': 'Person', name: 'Thabo Molefe' },
-          reviewBody:
-            'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
-          itemReviewed: {
-            '@type': 'Service',
-            name: 'Ecommerce Website Development',
-            provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
-          },
-        },
-        {
-          '@type': 'Review',
-          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          author: { '@type': 'Person', name: 'Sarah van der Berg' },
-          reviewBody:
-            'Working with Mpho was seamless. His Next.js expertise combined with SEO knowledge helped our agency website achieve exceptional Core Web Vitals scores and organic visibility.',
-          itemReviewed: {
-            '@type': 'Service',
-            name: 'Next.js Website Design',
-            provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
-          },
-        },
-        {
-          '@type': 'Review',
-          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          author: { '@type': 'Person', name: 'Lucky Nkosi' },
-          reviewBody:
-            'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Midrand and Gauteng was exactly what we needed.',
-          itemReviewed: {
-            '@type': 'Service',
-            name: 'Web Design & Local SEO',
-            provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
-          },
-        },
-      ],
-    },
+
     {
       '@type': 'HowTo',
       name: 'How to Choose a Web Design Agency in South Africa',
@@ -219,21 +170,25 @@ const homePageSchema = {
       step: [
         {
           '@type': 'HowToStep',
+          position: 1,
           name: 'Define Your Requirements',
           text: 'List your business goals, target audience, required features, and budget before contacting agencies.',
         },
         {
           '@type': 'HowToStep',
+          position: 2,
           name: 'Check Portfolio and Reviews',
           text: 'Review the agency portfolio for quality and relevance. Check Google reviews and testimonials from past clients.',
         },
         {
           '@type': 'HowToStep',
+          position: 3,
           name: 'Evaluate Technical Expertise',
           text: 'Ensure they use modern technologies like Next.js, React, and implement SEO best practices for better Google rankings.',
         },
         {
           '@type': 'HowToStep',
+          position: 4,
           name: 'Request Detailed Quote',
           text: 'Get a comprehensive quote including timeline, costs, hosting, maintenance, and post-launch support.',
         },
@@ -247,21 +202,25 @@ const homePageSchema = {
       step: [
         {
           '@type': 'HowToStep',
+          position: 1,
           name: 'Conduct Keyword Research',
           text: 'Identify relevant keywords for your business, including local terms like "web design Midrand" or "SEO services South Africa".',
         },
         {
           '@type': 'HowToStep',
+          position: 2,
           name: 'Optimize On-Page Elements',
           text: 'Ensure proper title tags, meta descriptions, header tags, and image alt text for all pages.',
         },
         {
           '@type': 'HowToStep',
+          position: 3,
           name: 'Improve Page Speed',
           text: 'Optimize images, enable compression, use CDN, and ensure fast hosting. Aim for under 3 second load time.',
         },
         {
           '@type': 'HowToStep',
+          position: 4,
           name: 'Build Quality Backlinks',
           text: 'Earn links from reputable South African websites and directories to improve domain authority.',
         },

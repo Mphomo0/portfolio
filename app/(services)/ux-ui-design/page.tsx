@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'UX/UI Design | User Experience Experts',
-  description: 'UX/UI design in Midrand, South Africa. User research, wireframes, and prototypes for web and mobile apps.',
+  description: 'UX/UI design in Midrand, South Africa. Professional user research, wireframes, and prototypes for web and mobile applications that convert.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/ux-ui-design',
   },
   openGraph: {
     title: 'UX/UI Design Services | User-Centered Digital Products',
     description: 'Expert UX/UI design in Midrand. User research, wireframes, and visual design for websites and mobile applications.',
+    url: 'https://www.mpho-moipolai.co.za/ux-ui-design',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'UX/UI Design Services - User-Centered Digital Products',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

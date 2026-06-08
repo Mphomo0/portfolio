@@ -194,12 +194,14 @@ const globalSchema = {
         latitude: -25.9984,
         longitude: 28.1263,
       },
-      openingHoursSpecification: {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '17:00',
-      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '17:00',
+        },
+      ],
       priceRange: '$$',
       currenciesAccepted: 'ZAR',
       paymentAccepted: 'Cash, Credit Card, EFT, PayFast',
@@ -282,6 +284,51 @@ const globalSchema = {
       email: 'contact@mpho-moipolai.co.za',
       foundingDate: '2011',
       founder: { '@id': 'https://www.mpho-moipolai.co.za/#person' },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5',
+        reviewCount: '3',
+        bestRating: '5',
+        worstRating: '1',
+      },
+      review: [
+        {
+          '@type': 'Review',
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          author: { '@type': 'Person', name: 'Thabo Molefe' },
+          reviewBody:
+            'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
+          itemReviewed: {
+            '@type': 'Service',
+            name: 'Ecommerce Website Development',
+            provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
+          },
+        },
+        {
+          '@type': 'Review',
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          author: { '@type': 'Person', name: 'Sarah van der Berg' },
+          reviewBody:
+            'Working with Mpho was seamless. His Next.js expertise combined with SEO knowledge helped our agency website achieve exceptional Core Web Vitals scores and organic visibility.',
+          itemReviewed: {
+            '@type': 'Service',
+            name: 'Next.js Website Design',
+            provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
+          },
+        },
+        {
+          '@type': 'Review',
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          author: { '@type': 'Person', name: 'Lucky Nkosi' },
+          reviewBody:
+            'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Midrand and Gauteng was exactly what we needed.',
+          itemReviewed: {
+            '@type': 'Service',
+            name: 'Web Design & Local SEO',
+            provider: { '@id': 'https://www.mpho-moipolai.co.za/#organization' },
+          },
+        },
+      ],
       sameAs: [
         'https://www.linkedin.com/in/mpho-moipolai-26b06286',
         'https://github.com/Mphomo0',
@@ -311,6 +358,7 @@ export default function RootLayout({
   return (
     <html lang="en-ZA" className={inter.variable} suppressHydrationWarning>
       <head>
+        <meta name="msvalidate.01" content="6F4E7F1FC1EFA944472DB933122CB39F" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

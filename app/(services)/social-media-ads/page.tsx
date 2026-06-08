@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Social Media Ads | Facebook & Instagram Advertising',
-  description: 'Targeted social media ads in Midrand. High-converting Facebook, Instagram, and LinkedIn campaigns for South African businesses.',
+  description: 'Targeted social media ads in Midrand, South Africa. High-converting Facebook, Instagram, and LinkedIn campaigns with measurable ROI for local businesses.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/social-media-ads',
   },
   openGraph: {
     title: 'Social Media Advertising | High-Converting Ad Campaigns',
     description: 'Targeted Facebook, Instagram, and LinkedIn ads for Midrand businesses. ROI-focused campaigns with measurable results.',
+    url: 'https://www.mpho-moipolai.co.za/social-media-ads',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Social Media Ads - Facebook & Instagram Advertising South Africa',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

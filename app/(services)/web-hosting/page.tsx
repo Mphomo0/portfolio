@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Web Hosting | Fast & Reliable Hosting',
-  description: 'Fast web hosting in Midrand, South Africa. 99.9% uptime, free SSL, daily backups, and 24/7 support.',
+  description: 'Fast web hosting in Midrand, South Africa. 99.9% uptime, free SSL certificates, daily backups, CDN integration, and expert 24/7 support.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/web-hosting',
   },
   openGraph: {
     title: 'Web Hosting South Africa | Fast & Secure Servers',
     description: 'Reliable web hosting with 99.9% uptime. Free SSL, daily backups, and 24/7 support for South African businesses.',
+    url: 'https://www.mpho-moipolai.co.za/web-hosting',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Web Hosting South Africa - Fast & Secure Servers',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 

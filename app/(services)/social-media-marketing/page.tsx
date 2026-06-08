@@ -3,13 +3,25 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Social Media Marketing | Grow Your Brand',
-  description: 'Social media marketing in Midrand. Facebook, Instagram, and LinkedIn management with content creation.',
+  description: 'Social media marketing in Midrand, South Africa. Facebook, Instagram, and LinkedIn management with strategic content creation to grow your brand.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/social-media-marketing',
   },
   openGraph: {
     title: 'Social Media Marketing | Build Your Online Presence',
     description: 'Grow your brand with expert social media management. Content creation and strategy for Facebook, Instagram, and LinkedIn.',
+    url: 'https://www.mpho-moipolai.co.za/social-media-marketing',
+    siteName: 'Mpho Moipolai',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Social Media Marketing - Grow Your Brand Online',
+      },
+    ],
+    locale: 'en_ZA',
+    type: 'website',
   },
 }
 
