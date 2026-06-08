@@ -121,7 +121,7 @@ const globalSchema = {
       hasOccupation: {
         '@type': 'Occupation',
         name: 'Full Stack Web Developer & SEO Specialist',
-        occupationLocation: { '@type': 'City', name: 'Midrand' },
+        occupationLocation: { '@type': 'AdministrativeArea', name: 'Midrand' },
         skills:
           'Next.js, React, TypeScript, Node.js, SEO, GEO, AEO, Tailwind CSS, PostgreSQL, MongoDB, Prisma',
       },
@@ -144,15 +144,6 @@ const globalSchema = {
         'Local SEO',
         'Technical SEO',
         'Core Web Vitals',
-      ],
-      areaServed: [
-        { '@type': 'City', name: 'Midrand' },
-        { '@type': 'City', name: 'Johannesburg' },
-        { '@type': 'City', name: 'Pretoria' },
-        { '@type': 'City', name: 'Sandton' },
-        { '@type': 'City', name: 'Centurion' },
-        { '@type': 'State', name: 'Gauteng' },
-        { '@type': 'Country', name: 'South Africa' },
       ],
       address: {
         '@type': 'PostalAddress',

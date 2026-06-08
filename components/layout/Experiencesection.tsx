@@ -60,15 +60,9 @@ const experienceStructuredData = {
     name: exp.title,
     description: `${exp.description} ${exp.highlights.join('. ')}`,
     occupationLocation: {
-      '@type': 'Place',
+      '@type': 'AdministrativeArea',
       name: 'Johannesburg, South Africa',
     },
-    hiringOrganization: {
-      '@type': 'Organization',
-      name: exp.company,
-      url: exp.companyUrl,
-    },
-    estimatedSalary: undefined,
   })),
 }
 
