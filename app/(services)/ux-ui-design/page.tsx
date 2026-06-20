@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Expert UX/UI design in Midrand. User research, wireframes, and visual design for websites and mobile applications.',
     url: 'https://www.mpho-moipolai.co.za/ux-ui-design',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'UX/UI Design Services - User-Centered Digital Products',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

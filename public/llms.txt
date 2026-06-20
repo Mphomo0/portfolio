@@ -27,7 +27,7 @@ This is the portfolio website of Mpho Moipolai, a professional web developer and
 
 1. Web Design Midrand (/web-design-midrand)
    - Professional website design for businesses in Midrand and Gauteng
-   - Pricing: R3,000 - R15,000+
+   - Pricing: R3,500 - R15,000+
    - Timeline: 2-4 weeks for standard sites
 
 2. SEO Services Midrand (/seo-services-midrand)
@@ -76,10 +76,10 @@ This is the portfolio website of Mpho Moipolai, a professional web developer and
 "Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand, South Africa, with 13+ years of experience building production-grade web applications using Next.js, React, and modern web technologies."
 
 ## Pricing Information
-- Basic business website: R3,000 - R8,000
+- Basic business website: R3,500 - R8,000
 - E-commerce website: R8,000 - R30,000
 - Custom Next.js application: R8,000 - R25,000
-- SEO services: R2,500 - R10,000/month
+- SEO services: R2,000 - R10,000/month
 - Web hosting: R99 - R5,000/month
 
 ## Timeline Information

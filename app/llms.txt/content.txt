@@ -51,7 +51,7 @@ Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand,
 
 ## Pricing Overview
 
-- **Basic Website**: R3,000 - R15,000
+- **Basic Website**: R3,500 - R15,000
 - **Ecommerce Website**: R8,000 - R30,000+
 - **Next.js Website**: R8,000 - R25,000+
 - **SEO Services**: R2,000 - R10,000/month

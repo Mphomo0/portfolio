@@ -82,21 +82,12 @@ export const metadata: Metadata = {
       'Web design and SEO services in Midrand, South Africa. Next.js developer building fast websites that rank.',
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Mpho Moipolai - Web Design & SEO Expert in Midrand, South Africa',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mpho Moipolai | Web Design & SEO Midrand',
     description:
       'Next.js developer and SEO specialist in Midrand, South Africa.',
-    images: ['/images/og-image.jpg'],
     creator: '@gift187',
   },
   verification: {
@@ -116,7 +107,7 @@ const globalSchema = {
       jobTitle: 'Full Stack Web Developer & SEO Specialist',
       description:
         'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand, South Africa, with 13+ years of experience building production-grade web applications using Next.js, React, and modern web technologies.',
-      image: 'https://www.mpho-moipolai.co.za/images/og-image.jpg',
+      image: 'https://www.mpho-moipolai.co.za/images/logo/logo.webp',
       email: 'contact@mpho-moipolai.co.za',
       hasOccupation: {
         '@type': 'Occupation',
@@ -167,7 +158,7 @@ const globalSchema = {
       name: 'Mpho Moipolai Web Design & SEO',
       url: 'https://www.mpho-moipolai.co.za',
       logo: 'https://www.mpho-moipolai.co.za/images/logo/logo.webp',
-      image: 'https://www.mpho-moipolai.co.za/images/og-image.jpg',
+      image: 'https://www.mpho-moipolai.co.za/images/logo/logo.webp',
       email: 'contact@mpho-moipolai.co.za',
       telephone: '+27793676883',
       description:

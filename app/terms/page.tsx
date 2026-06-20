@@ -13,14 +13,6 @@ export const metadata: Metadata = {
     description: 'Terms of service for mpho-moipolai.co.za. Review the terms and conditions for using our web design and SEO services in South Africa.',
     url: 'https://www.mpho-moipolai.co.za/terms',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Terms of Service - Mpho Moipolai Web Design & SEO',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Create a memorable brand with professional logo design and brand identity services in Midrand, South Africa.',
     url: 'https://www.mpho-moipolai.co.za/branding-design',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Branding Design - Logo & Brand Identity Services',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

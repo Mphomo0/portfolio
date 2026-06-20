@@ -13,7 +13,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Mpho Moipolai | Full Stack Web Developer',
+  title: { absolute: 'About Mpho Moipolai | Web Developer Midrand' },
   description:
     'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years building Next.js websites that rank on Google.',
   alternates: {
@@ -25,14 +25,6 @@ export const metadata: Metadata = {
       'Full Stack Web Developer and SEO Specialist in Midrand, South Africa. 13+ years of experience.',
     url: 'https://www.mpho-moipolai.co.za/about',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'About Mpho Moipolai - Full Stack Web Developer & SEO Specialist',
-      },
-    ],
     locale: 'en_ZA',
     type: 'profile',
   },
@@ -159,7 +151,7 @@ export default function AboutPage() {
         description:
           'Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand, South Africa, with 13+ years of experience building production-grade web applications using Next.js, React, and modern web technologies.',
         url: 'https://www.mpho-moipolai.co.za',
-        image: 'https://www.mpho-moipolai.co.za/images/og-image.jpg',
+        image: 'https://www.mpho-moipolai.co.za/images/logo/logo.webp',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Midrand',

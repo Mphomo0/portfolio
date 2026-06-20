@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Reliable web hosting with 99.9% uptime. Free SSL, daily backups, and 24/7 support for South African businesses.',
     url: 'https://www.mpho-moipolai.co.za/web-hosting',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Web Hosting South Africa - Fast & Secure Servers',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

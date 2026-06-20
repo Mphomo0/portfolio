@@ -23,14 +23,6 @@ export const metadata: Metadata = {
       'Privacy policy for mpho-moipolai.co.za. Learn how we collect, use, and protect your personal information in compliance with POPIA and GDPR.',
     url: 'https://www.mpho-moipolai.co.za/privacy',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Privacy Policy - Mpho Moipolai Web Design & SEO',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

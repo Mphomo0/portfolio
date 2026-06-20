@@ -14,14 +14,6 @@ export const metadata: Metadata = {
       'Professional SEO services for Midrand businesses. Local SEO, technical audits, and content optimization with proven results.',
     url: 'https://www.mpho-moipolai.co.za/seo-services-midrand',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'SEO Services Midrand - Rank Higher on Google',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },
@@ -60,13 +52,10 @@ export default function SEOServicesMidrandPage() {
           { '@type': 'Country', name: 'South Africa' },
         ],
         offers: {
-          '@type': 'Offer',
-          price: 'R2,000 - R10,000/month',
+          '@type': 'AggregateOffer',
+          lowPrice: '2000',
+          highPrice: '10000',
           priceCurrency: 'ZAR',
-          availableAtOrFrom: {
-            '@type': 'LocalBusiness',
-            '@id': 'https://www.mpho-moipolai.co.za/#localbusiness',
-          },
         },
       },
       {

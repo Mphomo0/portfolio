@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Grow your brand with expert social media management. Content creation and strategy for Facebook, Instagram, and LinkedIn.',
     url: 'https://www.mpho-moipolai.co.za/social-media-marketing',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Social Media Marketing - Grow Your Brand Online',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

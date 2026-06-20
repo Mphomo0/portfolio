@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Next.js Developer | High-Performance Websites',
+  title: { absolute: 'Next.js Developer | High-Performance Websites' },
   description: 'Next.js websites in Midrand, South Africa. Server-side rendering, static generation, and built-in SEO for blazing-fast, high-ranking business websites.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/nextjs-website-design',
@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Build your website with Next.js for lightning-fast speed, excellent SEO, and seamless user experience.',
     url: 'https://www.mpho-moipolai.co.za/nextjs-website-design',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Next.js Website Design - High-Performance Websites',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

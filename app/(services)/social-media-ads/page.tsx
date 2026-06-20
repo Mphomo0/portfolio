@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Social Media Ads | Facebook & Instagram Advertising',
+  title: { absolute: 'Social Media Ads Midrand | Facebook & Instagram' },
   description: 'Targeted social media ads in Midrand, South Africa. High-converting Facebook, Instagram, and LinkedIn campaigns with measurable ROI for local businesses.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/social-media-ads',
@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Targeted Facebook, Instagram, and LinkedIn ads for Midrand businesses. ROI-focused campaigns with measurable results.',
     url: 'https://www.mpho-moipolai.co.za/social-media-ads',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Social Media Ads - Facebook & Instagram Advertising South Africa',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },

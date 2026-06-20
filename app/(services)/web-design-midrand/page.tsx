@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Web Design Midrand | Fast, SEO-Optimized Websites',
+  title: { absolute: 'Web Design Midrand | Fast, SEO-Optimized Sites' },
   description:
     'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses. Free consultation available.',
   alternates: {
@@ -14,14 +14,6 @@ export const metadata: Metadata = {
       'Custom web design services in Midrand, Gauteng. Fast, responsive websites built with Next.js for South African businesses.',
     url: 'https://www.mpho-moipolai.co.za/web-design-midrand',
     siteName: 'Mpho Moipolai',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Web Design Midrand - Professional Websites for South African Businesses',
-      },
-    ],
     locale: 'en_ZA',
     type: 'website',
   },
@@ -60,13 +52,10 @@ export default function WebDesignMidrandPage() {
           { '@type': 'Country', name: 'South Africa' },
         ],
         offers: {
-          '@type': 'Offer',
-          price: 'R3,500 - R15,000+',
+          '@type': 'AggregateOffer',
+          lowPrice: '3500',
+          highPrice: '15000',
           priceCurrency: 'ZAR',
-          availableAtOrFrom: {
-            '@type': 'LocalBusiness',
-            '@id': 'https://www.mpho-moipolai.co.za/#localbusiness',
-          },
         },
       },
       {
