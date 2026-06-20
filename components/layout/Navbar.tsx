@@ -23,7 +23,7 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -57,7 +57,6 @@ export function Navbar() {
               className='object-contain w-auto h-auto'
               style={{ aspectRatio: '1834 / 262' }}
               priority
-              loading="eager"
             />
           </Link>
 

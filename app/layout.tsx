@@ -82,6 +82,14 @@ export const metadata: Metadata = {
       'Web design and SEO services in Midrand, South Africa. Next.js developer building fast websites that rank.',
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Mpho Moipolai - Web Design & SEO Expert in Midrand, South Africa',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -89,6 +97,7 @@ export const metadata: Metadata = {
     description:
       'Next.js developer and SEO specialist in Midrand, South Africa.',
     creator: '@gift187',
+    images: ['/opengraph-image'],
   },
   verification: {
     google: 'laFdpgxVc-JO8ff3Ww6hJAmmbGQGE8zCmTAEfsZDPeU',

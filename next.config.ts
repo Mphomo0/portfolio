@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
   },
   poweredByHeader: false,
-  reactStrictMode: false,
+  reactStrictMode: true,
 };
 
 export default nextConfig;

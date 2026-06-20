@@ -61,118 +61,120 @@ export default function ContactSection() {
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactStructuredData),
         }}
       />
 
       <section
-        id='contact'
-        className='py-24 md:py-32 bg-secondary/30'
-        aria-labelledby='contact-heading'
+        id="contact"
+        className="py-24 md:py-32 bg-secondary/30"
+        aria-labelledby="contact-heading"
       >
-        <div className='container mx-auto px-6'>
+        <div className="container mx-auto px-6">
           <motion.div
-            className='max-w-3xl mx-auto text-center'
+            className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className='inline-block text-sm font-medium text-violet-700 mb-4'>
+            <p className="inline-block text-sm font-medium text-violet-700 mb-4">
               Get in Touch
             </p>
             <h2
-              id='contact-heading'
-              className='text-3xl md:text-4xl font-bold text-foreground mb-4'
+              id="contact-heading"
+              className="text-3xl md:text-4xl font-bold text-foreground mb-4"
             >
               Open to new opportunities
             </h2>
-            <p className='text-muted-foreground text-lg mb-10 max-w-xl mx-auto'>
+            <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
               Whether you have a project in mind, a question about my work, or
               just want to say hello—I'd love to hear from you.
             </p>
 
             <motion.form
               ref={formRef}
-              className='space-y-6 text-left'
+              className="space-y-6 text-left"
               action={formAction}
-              aria-label='Contact form'
+              aria-label="Contact form"
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label
-                    htmlFor='firstName'
-                    className='block text-sm font-medium text-foreground mb-1'
+                    htmlFor="firstName"
+                    className="block text-sm font-medium text-foreground mb-1"
                   >
                     First Name
                   </label>
                   <input
-                    id='firstName'
-                    type='text'
-                    name='firstName'
-                    autoComplete='given-name'
+                    id="firstName"
+                    type="text"
+                    name="firstName"
+                    autoComplete="given-name"
                     className={inputClass()}
-                    placeholder='First Name'
+                    placeholder="First Name"
                     required
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor='lastName'
-                    className='block text-sm font-medium text-foreground mb-1'
+                    htmlFor="lastName"
+                    className="block text-sm font-medium text-foreground mb-1"
                   >
                     Last Name
                   </label>
                   <input
-                    id='lastName'
-                    type='text'
-                    name='lastName'
-                    autoComplete='family-name'
+                    id="lastName"
+                    type="text"
+                    name="lastName"
+                    autoComplete="family-name"
                     className={inputClass()}
-                    placeholder='Last Name'
+                    placeholder="Last Name"
                     required
                   />
                 </div>
               </div>
 
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label
-                    htmlFor='email'
-                    className='block text-sm font-medium text-foreground mb-1'
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-1"
                   >
                     Email
                   </label>
                   <input
-                    id='email'
-                    type='email'
-                    name='email'
-                    autoComplete='email'
+                    id="email"
+                    type="email"
+                    name="email"
+                    autoComplete="email"
                     className={inputClass()}
-                    placeholder='you@example.com'
+                    placeholder="you@example.com"
                     required
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor='phone'
-                    className='block text-sm font-medium text-foreground mb-1'
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-foreground mb-1"
                   >
                     Phone
                   </label>
                   <input
-                    id='phone'
-                    type='tel'
-                    name='phone'
-                    autoComplete='tel'
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    autoComplete="tel"
                     className={inputClass()}
-                    placeholder='+27 12 345 6789'
+                    placeholder="+27 12 345 6789"
                     required
                   />
                 </div>
@@ -180,84 +182,84 @@ export default function ContactSection() {
 
               <div>
                 <label
-                  htmlFor='subject'
-                  className='block text-sm font-medium text-foreground mb-1'
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-foreground mb-1"
                 >
                   Subject
                 </label>
                 <input
-                  id='subject'
-                  type='text'
-                  name='subject'
+                  id="subject"
+                  type="text"
+                  name="subject"
                   className={inputClass()}
-                  placeholder='What is this about?'
+                  placeholder="What is this about?"
                   required
                 />
               </div>
 
               <div>
                 <label
-                  htmlFor='message'
-                  className='block text-sm font-medium text-foreground mb-1'
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground mb-1"
                 >
                   Message
                 </label>
                 <textarea
-                  id='message'
-                  name='message'
+                  id="message"
+                  name="message"
                   rows={6}
                   className={inputClass()}
-                  placeholder='Your message...'
+                  placeholder="Your message..."
                   required
                 />
               </div>
 
               <fieldset>
-                <legend className='block text-sm font-medium text-foreground mb-2'>
+                <legend className="block text-sm font-medium text-foreground mb-2">
                   How did you find me?
                 </legend>
-                <div className='flex flex-wrap gap-4'>
+                <div className="flex flex-wrap gap-4">
                   {sourceOptions.map((option) => (
                     <label
                       key={option.value}
                       htmlFor={`source-${option.value}`}
-                      className='flex items-center gap-2 cursor-pointer text-foreground'
+                      className="flex items-center gap-2 cursor-pointer text-foreground"
                     >
                       <input
                         id={`source-${option.value}`}
-                        type='radio'
-                        name='source'
+                        type="radio"
+                        name="source"
                         value={option.value}
                         required
-                        className='w-4 h-4 accent-purple-600'
+                        className="w-4 h-4 accent-purple-600"
                       />
-                      <span className='text-sm'>{option.label}</span>
+                      <span className="text-sm">{option.label}</span>
                     </label>
                   ))}
                 </div>
               </fieldset>
 
               {state.error && (
-                <p className='text-red-500 text-sm text-center' role='alert'>
+                <p className="text-red-500 text-sm text-center" role="alert">
                   {state.error}
                 </p>
               )}
 
-              <div className='text-center'>
+              <div className="text-center">
                 <Button
-                  type='submit'
+                  type="submit"
                   disabled={isPending}
                   aria-busy={isPending}
-                  className='flex items-center justify-center gap-2 px-6 py-5 rounded-[var(--radius)] bg-purple-600 text-white'
+                  className="flex items-center justify-center gap-2 px-6 py-5 rounded-(--radius) bg-purple-600 text-white"
                 >
-                  <Mail className='w-5 h-5' aria-hidden='true' />
+                  <Mail className="w-5 h-5" aria-hidden="true" />
                   {isPending ? 'Sending...' : 'Send Message'}
-                  <ArrowRight className='w-5 h-5' aria-hidden='true' />
+                  <ArrowRight className="w-5 h-5" aria-hidden="true" />
                 </Button>
               </div>
 
               {state.success && (
-                <p className='text-green-500 mt-4 text-center' role='status'>
+                <p className="text-green-500 mt-4 text-center" role="status">
                   Thank you! Your message has been sent.
                 </p>
               )}
@@ -265,22 +267,23 @@ export default function ContactSection() {
           </motion.div>
 
           <motion.div
-            className='max-w-3xl mx-auto mt-20'
+            className="max-w-3xl mx-auto mt-20"
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h3
-              id='faq-heading'
-              className='text-2xl md:text-3xl font-bold text-foreground text-center mb-8'
+              id="faq-heading"
+              className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8"
             >
               Frequently Asked Questions
             </h3>
 
             <div
-              role='region'
-              aria-labelledby='faq-heading'
-              className='space-y-3'
+              role="region"
+              aria-labelledby="faq-heading"
+              className="space-y-3"
             >
               {faqs.map((faq, index) => {
                 const isOpen = openFaq === index
@@ -290,20 +293,20 @@ export default function ContactSection() {
                 return (
                   <div
                     key={index}
-                    className='border border-border/50 rounded-lg bg-card overflow-hidden'
+                    className="border border-border/50 rounded-lg bg-card overflow-hidden"
                   >
                     <h4>
                       <button
                         id={questionId}
-                        type='button'
+                        type="button"
                         onClick={() => setOpenFaq(isOpen ? null : index)}
                         aria-expanded={isOpen}
                         aria-controls={answerId}
-                        className='w-full flex items-center justify-between p-4 text-left text-foreground font-medium hover:bg-secondary/50 transition-colors'
+                        className="w-full flex items-center justify-between p-4 text-left text-foreground font-medium hover:bg-secondary/50 transition-colors"
                       >
                         {faq.question}
                         <ChevronDown
-                          aria-hidden='true'
+                          aria-hidden="true"
                           className={`w-5 h-5 shrink-0 transition-transform ${
                             isOpen ? 'rotate-180' : ''
                           }`}
@@ -312,7 +315,7 @@ export default function ContactSection() {
                     </h4>
                     <div
                       id={answerId}
-                      role='region'
+                      role="region"
                       aria-labelledby={questionId}
                       hidden={!isOpen}
                     >
@@ -323,7 +326,7 @@ export default function ContactSection() {
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3 }}
-                            className='px-4 pb-4 text-muted-foreground'
+                            className="px-4 pb-4 text-muted-foreground"
                           >
                             {faq.answer}
                           </motion.div>

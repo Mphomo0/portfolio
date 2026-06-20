@@ -86,7 +86,8 @@ export function ExperienceSection() {
             <motion.div
               className="text-center mb-16"
               initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
               <p className="inline-block text-sm font-medium text-violet-700 mb-4">
@@ -118,7 +119,8 @@ export function ExperienceSection() {
                       index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                     }`}
                     initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.2 }}
                   >
                     <div

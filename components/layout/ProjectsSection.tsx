@@ -8,19 +8,19 @@ import { ExternalLink, ArrowRight } from 'lucide-react'
 
 const GitHubIcon = () => (
   <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='20'
-    height='20'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='2'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    aria-hidden='true'
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
   >
-    <path d='M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4' />
-    <path d='M9 18c-4.51 2-5-2-7-2' />
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+    <path d="M9 18c-4.51 2-5-2-7-2" />
   </svg>
 )
 
@@ -131,30 +131,30 @@ const projects: Project[] = [
 export function ProjectsSection() {
   return (
     <section
-      id='projects'
-      aria-labelledby='projects-heading'
-      className='py-24 md:py-32 bg-background'
+      id="projects"
+      aria-labelledby="projects-heading"
+      className="py-24 md:py-32 bg-background"
     >
-      <div className='container mx-auto px-6'>
+      <div className="container mx-auto px-6">
         {/* Header */}
-        <header className='text-center mb-16'>
-          <span className='inline-block text-sm font-medium text-violet-700 mb-4'>
+        <header className="text-center mb-16">
+          <span className="inline-block text-sm font-medium text-violet-700 mb-4">
             Featured Work
           </span>
           <h2
-            id='projects-heading'
-            className='text-3xl md:text-4xl font-bold text-foreground mb-4'
+            id="projects-heading"
+            className="text-3xl md:text-4xl font-bold text-foreground mb-4"
           >
             Projects I&lsquo;ve Built
           </h2>
-          <p className='text-muted-foreground max-w-2xl mx-auto'>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             A selection of projects that showcase expertise in building
             production‑ready applications with modern technologies.
           </p>
         </header>
 
         {/* Projects Grid */}
-        <div className='grid lg:grid-cols-2 gap-8'>
+        <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <motion.article
               key={project.title}
@@ -167,40 +167,41 @@ export function ProjectsSection() {
               }`}
             >
               {/* Image / Visual */}
-              <div className='h-56 relative overflow-hidden'>
+              <div className="h-56 relative overflow-hidden">
                 <Image
                   src={project.imageUrl}
                   alt={`${project.title}: ${project.description.slice(0, 80)}... - Website built by Mpho Moipolai using ${project.tech.slice(0, 3).join(', ')}`}
                   fill
-                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                  className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   style={{ aspectRatio: '1426 / 734' }}
+                  priority={i === 0}
                 />
                 {/* Subtle overlay for polish */}
-                <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none' />
+                <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent pointer-events-none" />
                 {project.featured && (
-                  <span className='absolute top-4 right-4 px-3 py-1 text-xs font-medium bg-accent text-accent-foreground rounded-full z-10'>
+                  <span className="absolute top-4 right-4 px-3 py-1 text-xs font-medium bg-accent text-accent-foreground rounded-full z-10">
                     Featured
                   </span>
                 )}
               </div>
 
               {/* Project Content */}
-              <div className='p-6'>
-                <h3 className='text-xl font-semibold text-violet-700 mb-2 group-hover:text-pink-600 transition-colors'>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-violet-700 mb-2 group-hover:text-pink-600 transition-colors">
                   {project.title}
                 </h3>
 
-                <p className='text-muted-foreground text-sm mb-4'>
+                <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
 
                 {/* Features */}
-                <ul className='flex flex-wrap gap-2 mb-4 list-disc list-inside'>
+                <ul className="flex flex-wrap gap-2 mb-4 list-disc list-inside">
                   {project.features.slice(0, 3).map((feature) => (
                     <li
                       key={feature}
-                      className='px-2 py-1 text-xs text-muted-foreground bg-secondary rounded-md'
+                      className="px-2 py-1 text-xs text-muted-foreground bg-secondary rounded-md"
                     >
                       {feature}
                     </li>
@@ -208,11 +209,11 @@ export function ProjectsSection() {
                 </ul>
 
                 {/* Tech Stack */}
-                <div className='flex flex-wrap gap-2 mb-6'>
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className='px-2 py-1 text-xs font-medium text-accent bg-violet-600 rounded-md'
+                      className="px-2 py-1 text-xs font-medium text-accent bg-violet-600 rounded-md"
                     >
                       {tech}
                     </span>
@@ -221,38 +222,38 @@ export function ProjectsSection() {
 
                 {/* Performance Metrics */}
                 {project.metrics && (
-                  <div className='flex flex-wrap gap-2 mb-6'>
-                    <span className='px-2 py-1 text-xs bg-emerald-500/10 text-emerald-400 rounded-md border border-emerald-500/20'>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    <span className="px-2 py-1 text-xs bg-emerald-500/10 text-emerald-400 rounded-md border border-emerald-500/20">
                       LCP: {project.metrics.lcp}
                     </span>
-                    <span className='px-2 py-1 text-xs bg-blue-500/10 text-blue-400 rounded-md border border-blue-500/20'>
+                    <span className="px-2 py-1 text-xs bg-blue-500/10 text-blue-400 rounded-md border border-blue-500/20">
                       Performance: {project.metrics.performance}
                     </span>
-                    <span className='px-2 py-1 text-xs bg-violet-500/10 text-violet-400 rounded-md border border-violet-500/20'>
+                    <span className="px-2 py-1 text-xs bg-violet-500/10 text-violet-400 rounded-md border border-violet-500/20">
                       SEO: {project.metrics.seo}
                     </span>
                   </div>
                 )}
 
                 {/* Actions */}
-                <div className='flex items-center gap-3'>
-                  <Button variant='outline' size='sm' asChild>
+                <div className="flex items-center gap-3">
+                  <Button variant="outline" size="sm" asChild>
                     <Link
                       href={project.liveUrl}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={`Visit live demo for ${project.title}`}
                     >
-                      <ExternalLink className='w-4 h-4' />
+                      <ExternalLink className="w-4 h-4" />
                       Live Demo
                     </Link>
                   </Button>
 
-                  <Button variant='ghost' size='sm' asChild>
+                  <Button variant="ghost" size="sm" asChild>
                     <Link
                       href={project.githubUrl}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={`View source code for ${project.title} on GitHub`}
                     >
                       <GitHubIcon />
@@ -266,16 +267,16 @@ export function ProjectsSection() {
         </div>
 
         {/* View All */}
-        <div className='text-center mt-12'>
-          <Button variant='outline' size='lg' asChild>
+        <div className="text-center mt-12">
+          <Button variant="outline" size="lg" asChild>
             <Link
-              href='https://github.com/mphomo0?tab=repositories'
-              target='_blank'
-              rel='noopener noreferrer'
-              aria-label='View all projects on GitHub'
+              href="https://github.com/mphomo0?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View all projects on GitHub"
             >
               View All Projects on GitHub
-              <ArrowRight className='w-4 h-4 ml-2' />
+              <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </Button>
         </div>

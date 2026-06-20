@@ -11,7 +11,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Mpho Moipolai',
+  title: { absolute: 'Privacy Policy | Mpho Moipolai' },
   description:
     'Privacy policy for mpho-moipolai.co.za. Learn how we collect, use, and protect your personal information in compliance with POPIA and GDPR regulations.',
   alternates: {

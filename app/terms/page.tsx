@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, FileText, Scale, Briefcase, AlertTriangle, CheckCircle, XCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Mpho Moipolai',
+  title: { absolute: 'Terms of Service | Mpho Moipolai' },
   description: 'Terms of service for mpho-moipolai.co.za. Review the terms and conditions for using our web design, SEO, and digital services in South Africa.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/terms',
