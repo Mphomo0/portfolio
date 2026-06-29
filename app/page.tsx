@@ -1,14 +1,5 @@
 import { Metadata } from 'next'
 import { AboutSection } from '@/components/layout/AboutSection'
-
-export const metadata: Metadata = {
-  title: { absolute: 'Web Developer Midrand | Next.js & SEO | Mpho Moipolai' },
-  description:
-    'Full-stack Next.js developer in Midrand, Gauteng. I build fast, SEO-optimised websites and web apps for startups and small businesses across South Africa.',
-  alternates: {
-    canonical: 'https://www.mpho-moipolai.co.za',
-  },
-}
 import { ExperienceSection } from '@/components/layout/Experiencesection'
 import HeroSection from '@/components/layout/HeroSection'
 import PhilosophySection from '@/components/layout/PhilosophySection'
@@ -17,6 +8,23 @@ import TechStackSection from '@/components/layout/TechStackSection'
 import ContactSection from '@/components/layout/ContactSection'
 import { FAQSection } from '@/components/layout/FAQSection'
 import { TestimonialsSection } from '@/components/layout/TestimonialsSection'
+
+export const metadata: Metadata = {
+  title: { absolute: 'Web Developer Midrand | Next.js & SEO | Mpho Moipolai' },
+  description:
+    'Full-stack Next.js developer in Midrand, Gauteng. I build fast, SEO-optimised websites and web apps for startups and small businesses across South Africa.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Web Developer Midrand | Next.js & SEO | Mpho Moipolai',
+    description:
+      'Full-stack Next.js developer in Midrand, Gauteng. Fast, SEO-optimised websites and web apps for South African startups and small businesses.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
+  },
+}
 
 // Page-specific schema — server-rendered so all crawlers see it in initial HTML
 const homePageSchema = {
@@ -172,6 +180,43 @@ const homePageSchema = {
       keywords: 'Next.js, TypeScript, Tailwind CSS',
     },
 
+    {
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.mpho-moipolai.co.za/#localbusiness',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5',
+        reviewCount: '3',
+        bestRating: '5',
+        worstRating: '1',
+      },
+      review: [
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Ohentse Diseko' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody:
+            'Mpho delivered our education platform on time and exceeded expectations. The website performance and SEO results speak for themselves - we now rank on the first page for our key terms.',
+          datePublished: '2024-06-01',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Vormmia Sikaundi' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody:
+            'Working with Mpho was seamless. His Next.js expertise combined with SEO knowledge helped our agency website achieve exceptional Core Web Vitals scores and organic visibility.',
+          datePublished: '2024-09-01',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Vusi Jiya' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody:
+            'Our new website has generated more leads in 3 months than our previous site did in a year. The local SEO optimization for Soweto and Gauteng was exactly what we needed.',
+          datePublished: '2024-12-01',
+        },
+      ],
+    },
     {
       '@type': 'HowTo',
       name: 'How to Choose a Web Design Agency in South Africa',

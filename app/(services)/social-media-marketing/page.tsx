@@ -14,6 +14,22 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Social Media Marketing Midrand — Mpho Moipolai',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Social Media Marketing Midrand | Mpho Moipolai',
+    description:
+      'Social media marketing in Midrand. Facebook, Instagram, LinkedIn management. Content creation for South African businesses.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 

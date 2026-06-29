@@ -16,6 +16,22 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Web Design Midrand — Fast, SEO-Ready Sites by Mpho Moipolai',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Web Design Midrand | Fast, SEO-Ready Sites | Mpho Moipolai',
+    description:
+      'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 
