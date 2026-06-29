@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Social Media Marketing | Grow Your Brand',
-  description: 'Social media marketing in Midrand, South Africa. Facebook, Instagram, and LinkedIn management with strategic content creation to grow your brand.',
+  title: { absolute: 'Social Media Marketing Midrand | Mpho Moipolai' },
+  description: 'Social media marketing in Midrand. Facebook, Instagram, LinkedIn management. Content creation for South African businesses.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/social-media-marketing',
   },

@@ -1,4 +1,14 @@
+import { Metadata } from 'next'
 import { AboutSection } from '@/components/layout/AboutSection'
+
+export const metadata: Metadata = {
+  title: { absolute: 'Web Developer Midrand | Next.js & SEO | Mpho Moipolai' },
+  description:
+    'Full-stack Next.js developer in Midrand, Gauteng. I build fast, SEO-optimised websites and web apps for startups and small businesses across South Africa.',
+  alternates: {
+    canonical: 'https://www.mpho-moipolai.co.za',
+  },
+}
 import { ExperienceSection } from '@/components/layout/Experiencesection'
 import HeroSection from '@/components/layout/HeroSection'
 import PhilosophySection from '@/components/layout/PhilosophySection'

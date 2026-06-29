@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Web Design Midrand | Fast, SEO-Optimized Sites' },
+  title: { absolute: 'Web Design Midrand | Fast, SEO-Ready Sites | Mpho Moipolai' },
   description:
     'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses. Free consultation available.',
   alternates: {
