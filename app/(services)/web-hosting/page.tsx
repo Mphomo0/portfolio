@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Web Hosting South Africa | Mpho Moipolai' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Web Hosting South Africa | Mpho Moipolai',
+    description: 'Fast web hosting in South Africa. 99.9% uptime, free SSL, daily backups, and CDN for South African businesses.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 

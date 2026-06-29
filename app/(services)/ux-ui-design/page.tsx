@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'UX/UI Design Midrand | Mpho Moipolai' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'UX/UI Design Midrand | Mpho Moipolai',
+    description: 'UX/UI design in Midrand. User research, wireframes, and prototypes for web and mobile apps that convert.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 

@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Branding & Logo Design Midrand | Mpho Moipolai' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Branding & Logo Design Midrand | Mpho Moipolai',
+    description: 'Professional branding design in Midrand. Logo design and brand identity services for South African businesses.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 

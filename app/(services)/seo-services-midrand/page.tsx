@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'SEO Services Midrand | Rank Higher on Google' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SEO Services Midrand | Rank Higher on Google | Mpho Moipolai',
+    description: 'Expert SEO services in Midrand. Rank higher on Google with local SEO, keyword research, and technical optimisation.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 

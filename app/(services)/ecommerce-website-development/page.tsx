@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Ecommerce Website Development Midrand | Mpho Moipolai' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ecommerce Development Midrand | Mpho Moipolai',
+    description: 'Custom ecommerce development in Midrand. Secure online stores with PayFast and Peach Payments for South African businesses.',
+    creator: '@gift187',
+    images: ['/opengraph-image'],
   },
 }
 
