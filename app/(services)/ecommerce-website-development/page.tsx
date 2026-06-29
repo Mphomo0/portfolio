@@ -117,6 +117,53 @@ export default function EcommerceWebsiteDevelopmentPage() {
         </section>
 
         <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">How It Works</h2>
+          <ol className="space-y-6">
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h3 className="font-semibold mb-1">Store Strategy Session (Free)</h3>
+                <p className="text-muted-foreground">We map out your product catalogue, payment requirements (PayFast, Peach Payments, or Yoco), shipping rules, and SEO strategy before writing a line of code.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h3 className="font-semibold mb-1">Design & Product Architecture</h3>
+                <p className="text-muted-foreground">We design your storefront, product pages, checkout flow, and category structure — all optimised for mobile where 70%+ of South African shoppers browse.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h3 className="font-semibold mb-1">Build, Integrate & Test</h3>
+                <p className="text-muted-foreground">Payment gateways, inventory management, order notifications, and discount codes — all tested end-to-end in ZAR before launch.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h3 className="font-semibold mb-1">Launch & Admin Training</h3>
+                <p className="text-muted-foreground">You go live with a 1-hour admin walkthrough covering how to add products, manage orders, and update content yourself — no developer dependency.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section className="mb-12 bg-muted/30 rounded-2xl p-8 border">
+          <h2 className="text-2xl font-bold mb-6">Why Next.js for Ecommerce?</h2>
+          <div className="space-y-4">
+            <p className="text-lg leading-relaxed">Unlike Shopify or WooCommerce, a custom Next.js store gives you complete control — no transaction fees, no theme limitations, no monthly platform costs. Each page is server-rendered and fully indexed by Google, giving your products a structural SEO advantage over template-based stores.</p>
+            <ul className="space-y-2 text-muted-foreground">
+              <li className="flex gap-2"><span className="text-violet-500">→</span> No 2–3% Shopify transaction fees on every sale</li>
+              <li className="flex gap-2"><span className="text-violet-500">→</span> Product pages load under 2 seconds — a direct conversion driver</li>
+              <li className="flex gap-2"><span className="text-violet-500">→</span> SEO-first architecture: category and product URLs fully crawlable from day one</li>
+              <li className="flex gap-2"><span className="text-violet-500">→</span> Integrates with PayFast, Yoco, Peach Payments, and Ozow for ZAR payments</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Service Areas</h2>
           <p className="text-lg leading-relaxed mb-4">
             We build ecommerce websites for businesses throughout Gauteng including Midrand, Johannesburg, Pretoria, Sandton, Centurion, and surrounding areas.

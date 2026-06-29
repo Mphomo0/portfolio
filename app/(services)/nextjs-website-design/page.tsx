@@ -117,6 +117,60 @@ export default function NextjsWebsiteDesignPage() {
         </section>
 
         <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">How It Works</h2>
+          <ol className="space-y-6">
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h3 className="font-semibold mb-1">Discovery & Scoping (Free)</h3>
+                <p className="text-muted-foreground">We audit your current site (if any), discuss your goals, and produce a fixed-price quote. You know exactly what you're getting before we start.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h3 className="font-semibold mb-1">Design in Next.js & Tailwind</h3>
+                <p className="text-muted-foreground">We design directly in code using your brand colours, typography, and content. No Figma-to-code translation lag — what you see is what ships.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h3 className="font-semibold mb-1">Performance & SEO Optimisation</h3>
+                <p className="text-muted-foreground">Images compressed, fonts preloaded, schema markup added, Core Web Vitals verified — before launch, not after. Most Next.js sites we ship score 95+ on Google PageSpeed.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h3 className="font-semibold mb-1">Deployment & Ongoing Support</h3>
+                <p className="text-muted-foreground">Deployed to Vercel with automatic HTTPS, global CDN, and zero-downtime updates. Optional monthly retainer for content updates and monitoring.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section className="mb-12 bg-muted/30 rounded-2xl p-8 border">
+          <h2 className="text-2xl font-bold mb-6">Real Client Results</h2>
+          <div className="space-y-6">
+            <div className="border-b border-white/10 pb-6">
+              <h3 className="font-semibold mb-1">Sozim Trading & Consultancy</h3>
+              <p className="text-muted-foreground mb-2">Full Next.js + Prisma + MongoDB education platform. First-page Google rankings for primary training keywords within 3 months of launch.</p>
+              <Link href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+            <div className="border-b border-white/10 pb-6">
+              <h3 className="font-semibold mb-1">Nostalgic Studio</h3>
+              <p className="text-muted-foreground mb-2">Next.js + Tailwind agency site with perfect Core Web Vitals. Exceptional Lighthouse performance and organic visibility from launch day.</p>
+              <Link href="https://www.nostalgic-studio.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1">Tanosa Group</h3>
+              <p className="text-muted-foreground mb-2">Next.js agency website with seamless design-to-development workflow. Exceptional Core Web Vitals and measurable organic traffic growth after launch.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Service Areas</h2>
           <p className="text-lg leading-relaxed mb-4">
             We build Next.js websites for businesses throughout Gauteng including Midrand, Johannesburg, Pretoria, Sandton, and surrounding areas.

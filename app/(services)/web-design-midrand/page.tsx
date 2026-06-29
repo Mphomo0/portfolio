@@ -177,6 +177,61 @@ export default function WebDesignMidrandPage() {
         </section>
 
         <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">How It Works</h2>
+          <ol className="space-y-6">
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h3 className="font-semibold mb-1">Discovery Call (Free)</h3>
+                <p className="text-muted-foreground">We discuss your business goals, target audience, competitors, and budget. You leave with a clear project scope and fixed quote — no surprises.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h3 className="font-semibold mb-1">Design & Wireframes</h3>
+                <p className="text-muted-foreground">We produce wireframes and a design direction based on your brand. You review and approve before a single line of code is written.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h3 className="font-semibold mb-1">Development & SEO</h3>
+                <p className="text-muted-foreground">Your site is built in Next.js with on-page SEO, Core Web Vitals optimisation, schema markup, and mobile responsiveness baked in from day one.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h3 className="font-semibold mb-1">Launch & Handover</h3>
+                <p className="text-muted-foreground">After testing across all devices and browsers, your site goes live. You get a 30-minute walkthrough, admin access, and 30 days of post-launch support.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section className="mb-12 bg-muted/30 rounded-2xl p-8 border">
+          <h2 className="text-2xl font-bold mb-6">Real Client Results</h2>
+          <div className="space-y-6">
+            <div className="border-b border-white/10 pb-6">
+              <h3 className="font-semibold mb-1">Sozim Trading & Consultancy</h3>
+              <p className="text-muted-foreground mb-2">Education platform built with Next.js, TypeScript, and Prisma. Achieved first-page Google rankings for key training and certification terms within 3 months of launch.</p>
+              <Link href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+            <div className="border-b border-white/10 pb-6">
+              <h3 className="font-semibold mb-1">Jiyology Building & Plumbing</h3>
+              <p className="text-muted-foreground mb-2">Local service business website with Gauteng-targeted local SEO. Generated more leads in 3 months than the previous site did in a full year.</p>
+              <Link href="https://www.jiyology.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1">Nostalgic Studio</h3>
+              <p className="text-muted-foreground mb-2">Digital agency website achieving perfect Core Web Vitals scores. Designed to convert visitors into leads through clear service positioning and fast load times.</p>
+              <Link href="https://www.nostalgic-studio.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">
             Service Areas in Gauteng
           </h2>

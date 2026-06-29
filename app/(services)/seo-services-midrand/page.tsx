@@ -160,6 +160,60 @@ export default function SEOServicesMidrandPage() {
         </section>
 
         <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">How It Works</h2>
+          <ol className="space-y-6">
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h3 className="font-semibold mb-1">Free SEO Audit</h3>
+                <p className="text-muted-foreground">We run a full technical audit of your site — crawl errors, page speed, keyword gaps, backlink profile, and local visibility — and share a prioritised fix list before you commit to anything.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h3 className="font-semibold mb-1">Keyword & Competitor Research</h3>
+                <p className="text-muted-foreground">We identify the exact keywords your Midrand and Gauteng customers use, map them to the right pages, and benchmark your rankings against local competitors.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h3 className="font-semibold mb-1">On-Page & Technical Fixes</h3>
+                <p className="text-muted-foreground">We implement title tags, meta descriptions, schema markup, internal linking, Core Web Vitals improvements, and structured data — the foundations Google rewards.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h3 className="font-semibold mb-1">Monthly Reporting</h3>
+                <p className="text-muted-foreground">You receive a plain-English report every month showing ranking movements, organic traffic growth, and the work completed. No jargon, no fluff.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section className="mb-12 bg-muted/30 rounded-2xl p-8 border">
+          <h2 className="text-2xl font-bold mb-6">Real Client Results</h2>
+          <div className="space-y-6">
+            <div className="border-b border-white/10 pb-6">
+              <h3 className="font-semibold mb-1">Sozim Trading & Consultancy</h3>
+              <p className="text-muted-foreground mb-2">On-page SEO and local keyword targeting for an education platform. Achieved first-page Google rankings for core training terms within 3 months of launch.</p>
+              <Link href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+            <div className="border-b border-white/10 pb-6">
+              <h3 className="font-semibold mb-1">Jiyology Building & Plumbing</h3>
+              <p className="text-muted-foreground mb-2">Local SEO targeting Soweto and Gauteng service-area keywords. Generated more qualified leads in 3 months than the previous site in a full year.</p>
+              <Link href="https://www.jiyology.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1">Tanosa Group</h3>
+              <p className="text-muted-foreground mb-2">Agency website achieving exceptional Core Web Vitals scores — a key Google ranking signal — and measurable organic visibility improvements after technical SEO implementation.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">
             Local SEO Service Areas
           </h2>
