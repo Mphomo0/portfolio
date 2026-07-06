@@ -167,6 +167,24 @@ export default function WebDesignMidrandPage() {
             credibility, improves user experience, and helps you compete
             effectively in South Africa&apos;s digital marketplace.
           </p>
+          <p className="text-lg leading-relaxed mb-6">
+            A well-designed website also works hardest when it&apos;s paired
+            with the right foundations. Most of our web design projects are
+            built with{' '}
+            <Link href="/nextjs-website-design" className="text-violet-500 hover:underline">
+              Next.js
+            </Link>{' '}
+            for speed and Core Web Vitals, launched alongside{' '}
+            <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">
+              local SEO
+            </Link>{' '}
+            so your site ranks for Midrand searches from day one, and kept
+            secure with ongoing{' '}
+            <Link href="/web-maintenance" className="text-violet-500 hover:underline">
+              website maintenance
+            </Link>
+            .
+          </p>
           <p>
             Ready to start your project?{' '}
             <Link href="/#contact" className="text-violet-500 hover:underline">

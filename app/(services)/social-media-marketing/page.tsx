@@ -125,11 +125,45 @@ export default function SocialMediaMarketingPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Social Media Marketing Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            South Africa has one of the highest social media engagement rates globally. For Midrand businesses, social media provides direct access to local customers and allows for highly targeted advertising. Unlike traditional marketing, social media offers measurable ROI and the ability to engage in real-time conversations with your audience, building trust and loyalty that translates to sales.
+            South Africa has one of the highest social media engagement rates globally. For Midrand businesses, social media provides direct access to local customers and allows for highly targeted advertising. Unlike traditional marketing, social media offers measurable ROI and the ability to engage in real-time conversations with your audience, building trust and loyalty that translates to sales. Social media also works best as part of a joined-up strategy: a strong <Link href="/branding-design" className="text-violet-500 hover:underline">brand identity</Link> keeps your feed recognisable, <Link href="/social-media-ads" className="text-violet-500 hover:underline">paid social ads</Link> amplify your best organic content, and a fast <Link href="/web-design-midrand" className="text-violet-500 hover:underline">website</Link> converts the traffic your profiles generate.
           </p>
           <p>
             Ready to grow your social presence? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free social media audit.
           </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">What&apos;s Included in Our Social Media Management</h2>
+          <ol className="space-y-6">
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h3 className="font-semibold mb-1">Strategy & Platform Selection</h3>
+                <p className="text-muted-foreground">We audit your current presence and choose the right platforms for your audience — LinkedIn for B2B, Facebook and Instagram for consumer brands, TikTok for younger markets.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h3 className="font-semibold mb-1">Content Creation & Scheduling</h3>
+                <p className="text-muted-foreground">Professional graphics, video, Reels, and captions written in your brand voice, planned in a monthly content calendar and optimised for each platform&apos;s algorithm.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h3 className="font-semibold mb-1">Community Management</h3>
+                <p className="text-muted-foreground">Daily monitoring and responses to comments, messages, and reviews — the real-time engagement that builds trust and keeps your audience active.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h3 className="font-semibold mb-1">Monthly Reporting & Optimisation</h3>
+                <p className="text-muted-foreground">Clear reports on reach, engagement, follower growth, and leads generated, with the strategy adjusted each month based on what the data shows is working.</p>
+              </div>
+            </li>
+          </ol>
         </section>
 
         <section className="mb-12">

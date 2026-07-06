@@ -48,7 +48,7 @@ export default function ContactSection() {
     '@context': 'https://schema.org',
     '@type': 'ContactPoint',
     contactType: 'Customer Support',
-    email: 'mailto:admin@mpho-moipolai.co.za',
+    email: 'admin@mpho-moipolai.co.za',
     availableLanguage: ['English'],
     areaServed: 'Worldwide',
   }

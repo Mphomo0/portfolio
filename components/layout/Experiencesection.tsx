@@ -53,8 +53,9 @@ const experiences = [
 const experienceStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': 'https://www.mpho-moipolai.co.za/#person',
   name: 'Mpho Moipolai',
-  url: 'https://mpho-moipolai.co.za',
+  url: 'https://www.mpho-moipolai.co.za',
   hasOccupation: experiences.map((exp) => ({
     '@type': 'Occupation',
     name: exp.title,

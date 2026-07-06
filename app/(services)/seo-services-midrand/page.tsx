@@ -158,6 +158,21 @@ export default function SEOServicesMidrandPage() {
             data-driven approach targets keywords your customers actually search
             for.
           </p>
+          <p className="text-lg leading-relaxed mb-6">
+            SEO delivers the best results when your site is built for it. Our{' '}
+            <Link href="/web-design-midrand" className="text-violet-500 hover:underline">
+              web design
+            </Link>{' '}
+            and{' '}
+            <Link href="/nextjs-website-design" className="text-violet-500 hover:underline">
+              Next.js development
+            </Link>{' '}
+            services produce fast, crawlable sites that rank more easily, while{' '}
+            <Link href="/web-maintenance" className="text-violet-500 hover:underline">
+              ongoing maintenance
+            </Link>{' '}
+            keeps performance and security from slipping after launch.
+          </p>
           <p>
             Ready to boost your rankings?{' '}
             <Link href="/#contact" className="text-violet-500 hover:underline">

@@ -336,6 +336,7 @@ export default function TechStackSection() {
     '@graph': [
       {
         '@type': 'Person',
+        '@id': 'https://www.mpho-moipolai.co.za/#person',
         name: 'Mpho Moipolai',
         url: 'https://www.mpho-moipolai.co.za',
         jobTitle: 'Full Stack Web Developer',

@@ -117,7 +117,7 @@ export default function NextjsWebsiteDesignPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Choose Next.js for Your Business</h2>
           <p className="text-lg leading-relaxed mb-6">
-            In today&apos;s competitive digital landscape, website speed directly impacts your bottom line. Studies show that a 1-second delay in page load time can reduce conversions by 7%. Next.js websites load 3-5x faster than traditional WordPress sites, improving your Google rankings, reducing bounce rates, and increasing sales. Our Next.js expertise ensures your website is future-proof and scales with your business.
+            In today&apos;s competitive digital landscape, website speed directly impacts your bottom line. Studies show that a 1-second delay in page load time can reduce conversions by 7%. Next.js websites load 3-5x faster than traditional WordPress sites, improving your Google rankings, reducing bounce rates, and increasing sales. Our Next.js expertise ensures your website is future-proof and scales with your business. Next.js is the framework behind all our <Link href="/web-design-midrand" className="text-violet-500 hover:underline">web design projects</Link> and <Link href="/ecommerce-website-development" className="text-violet-500 hover:underline">ecommerce builds</Link>, and its server-rendered pages give our <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO work</Link> a technical head start that WordPress sites struggle to match.
           </p>
           <p>
             Want a high-performance website? <Link href="/#contact" className="text-violet-500 hover:underline">Get in touch</Link> to discuss your project.

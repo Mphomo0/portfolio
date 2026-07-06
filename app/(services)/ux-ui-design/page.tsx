@@ -117,11 +117,52 @@ export default function UXUIDesignPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why UX/UI Design Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            In today&apos;s competitive market, users expect seamless digital experiences. Poor UX costs businesses significantly—users abandon sites that are difficult to navigate. In South Africa, where mobile usage dominates, responsive and intuitive design is critical. Our UX/UI design services help you create products that users love, improving engagement, retention, and ultimately your bottom line.
+            In today&apos;s competitive market, users expect seamless digital experiences. Poor UX costs businesses significantly—users abandon sites that are difficult to navigate. In South Africa, where mobile usage dominates, responsive and intuitive design is critical. Our UX/UI design services help you create products that users love, improving engagement, retention, and ultimately your bottom line. UX/UI work also multiplies the value of your other digital investments — it shapes the layouts we build in our <Link href="/web-design-midrand" className="text-violet-500 hover:underline">web design projects</Link>, drives the checkout flows in <Link href="/ecommerce-website-development" className="text-violet-500 hover:underline">ecommerce builds</Link>, and applies the visual language from your <Link href="/branding-design" className="text-violet-500 hover:underline">brand identity</Link> consistently across every screen.
           </p>
           <p>
             Need a user-centered design? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free consultation.
           </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Our UX/UI Design Process</h2>
+          <ol className="space-y-6">
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h3 className="font-semibold mb-1">Discovery & User Research</h3>
+                <p className="text-muted-foreground">Stakeholder interviews, competitor analysis, and user research to understand who your users are, what they need, and where your current experience falls short.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h3 className="font-semibold mb-1">Personas & User Journeys</h3>
+                <p className="text-muted-foreground">We map your key user types and the paths they take to complete goals — sign-ups, purchases, enquiries — so design decisions are grounded in real behaviour, not guesswork.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h3 className="font-semibold mb-1">Wireframes & Interactive Prototypes</h3>
+                <p className="text-muted-foreground">Low-fidelity wireframes validate structure early and cheaply, then clickable prototypes let you experience the product before any development budget is spent.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h3 className="font-semibold mb-1">Visual Design in Figma</h3>
+                <p className="text-muted-foreground">High-fidelity screens with your brand colours, typography, and a reusable component library — delivered as production-ready Figma files developers can build from directly.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">5</span>
+              <div>
+                <h3 className="font-semibold mb-1">Usability Testing & Handoff</h3>
+                <p className="text-muted-foreground">Testing sessions with 5-10 real users catch friction points before launch. We then support the development handoff to make sure what ships matches what was designed.</p>
+              </div>
+            </li>
+          </ol>
         </section>
 
         <section className="mb-12">

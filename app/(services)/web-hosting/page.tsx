@@ -117,7 +117,7 @@ export default function WebHostingPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Quality Hosting Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            Website speed directly impacts your Google rankings and user experience. Slow hosting leads to high bounce rates and lost customers. In South Africa, where internet speeds vary, quality hosting with CDN integration ensures consistent performance. Additionally, local hosting in Gauteng provides faster access for your target audience. Our hosting includes automated backups, SSL certificates, and 24/7 support to keep your business running smoothly.
+            Website speed directly impacts your Google rankings and user experience. Slow hosting leads to high bounce rates and lost customers. In South Africa, where internet speeds vary, quality hosting with CDN integration ensures consistent performance. Additionally, local hosting in Gauteng provides faster access for your target audience. Our hosting includes automated backups, SSL certificates, and 24/7 support to keep your business running smoothly. Hosting pairs naturally with our <Link href="/web-maintenance" className="text-violet-500 hover:underline">web maintenance plans</Link> for a fully managed setup, and every site we build through our <Link href="/web-design-midrand" className="text-violet-500 hover:underline">web design service</Link> is deployed on infrastructure tuned for South African visitors.
           </p>
           <p>
             Need reliable hosting? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a hosting consultation.

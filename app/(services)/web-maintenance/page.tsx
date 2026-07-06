@@ -117,7 +117,7 @@ export default function WebMaintenancePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Web Maintenance Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            Websites are not set-and-forget—they require ongoing care to remain secure and functional. Outdated plugins and CMS versions are the leading cause of website hacks. In Gauteng&apos;s competitive market, a slow or broken website damages your reputation and costs you customers. Regular maintenance ensures your website loads fast, ranks well on Google, and provides a secure experience for your visitors. Prevention is far cheaper than fixing a hacked site.
+            Websites are not set-and-forget—they require ongoing care to remain secure and functional. Outdated plugins and CMS versions are the leading cause of website hacks. In Gauteng&apos;s competitive market, a slow or broken website damages your reputation and costs you customers. Regular maintenance ensures your website loads fast, ranks well on Google, and provides a secure experience for your visitors. Prevention is far cheaper than fixing a hacked site. Maintenance also protects your search rankings — the speed and security work feeds directly into the results our <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO services</Link> deliver, and combined with managed <Link href="/web-hosting" className="text-violet-500 hover:underline">web hosting</Link> you get one accountable partner for your entire site.
           </p>
           <p>
             Need website maintenance? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a maintenance plan.

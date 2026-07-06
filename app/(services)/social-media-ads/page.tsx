@@ -117,7 +117,7 @@ export default function SocialMediaAdsPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Social Media Ads Matter in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            Social media ads offer the highest targeting precision of any advertising channel. In Gauteng&apos;s competitive market, well-optimized ads can achieve ROAS (Return on Ad Spend) of 3-10x or more. Unlike traditional advertising, you only pay for actual clicks or impressions, and you can scale successful campaigns immediately. Our data-driven approach ensures every rand of your ad budget works harder.
+            Social media ads offer the highest targeting precision of any advertising channel. In Gauteng&apos;s competitive market, well-optimized ads can achieve ROAS (Return on Ad Spend) of 3-10x or more. Unlike traditional advertising, you only pay for actual clicks or impressions, and you can scale successful campaigns immediately. Our data-driven approach ensures every rand of your ad budget works harder. Paid ads also perform best alongside organic channels — consistent <Link href="/social-media-marketing" className="text-violet-500 hover:underline">social media marketing</Link> builds the trust that makes ads convert, and a fast, well-built <Link href="/web-design-midrand" className="text-violet-500 hover:underline">website</Link> ensures the clicks you pay for don&apos;t bounce.
           </p>
           <p>
             Ready to scale your business with ads? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free ad strategy consultation.

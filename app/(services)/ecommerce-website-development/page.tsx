@@ -117,7 +117,7 @@ export default function EcommerceWebsiteDevelopmentPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Ecommerce Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            South Africa&apos;s ecommerce market is growing rapidly, with more consumers shopping online for convenience. Midrand businesses can reach customers across Gauteng and nationwide through well-designed online stores. An ecommerce presence allows you to operate 24/7, reduce overhead costs compared to physical retail, and scale your business beyond local boundaries.
+            South Africa&apos;s ecommerce market is growing rapidly, with more consumers shopping online for convenience. Midrand businesses can reach customers across Gauteng and nationwide through well-designed online stores. An ecommerce presence allows you to operate 24/7, reduce overhead costs compared to physical retail, and scale your business beyond local boundaries. Successful stores also depend on the services around them: reliable <Link href="/web-hosting" className="text-violet-500 hover:underline">web hosting</Link> keeps checkout fast under load, <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO</Link> brings shoppers to your product pages, and solid <Link href="/ux-ui-design" className="text-violet-500 hover:underline">UX/UI design</Link> turns those visitors into buyers.
           </p>
           <p>
             Ready to start selling online? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free consultation.
