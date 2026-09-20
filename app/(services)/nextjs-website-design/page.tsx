@@ -131,7 +131,7 @@ export default function NextjsWebsiteDesignPage() {
               <span className="shrink-0 w-8 h-8 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-sm">1</span>
               <div>
                 <h3 className="font-semibold mb-1">Discovery & Scoping (Free)</h3>
-                <p className="text-muted-foreground">We audit your current site (if any), discuss your goals, and produce a fixed-price quote. You know exactly what you're getting before we start.</p>
+                <p className="text-muted-foreground">We audit your current site (if any), discuss your goals, and produce a fixed-price quote. You know exactly what you&apos;re getting before we start.</p>
               </div>
             </li>
             <li className="flex gap-4">

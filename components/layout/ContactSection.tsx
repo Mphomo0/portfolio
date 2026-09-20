@@ -91,7 +91,7 @@ export default function ContactSection() {
             </h2>
             <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
               Whether you have a project in mind, a question about my work, or
-              just want to say hello—I'd love to hear from you.
+              just want to say hello—I&apos;d love to hear from you.
             </p>
 
             <motion.form

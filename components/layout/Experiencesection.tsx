@@ -98,7 +98,7 @@ export function ExperienceSection() {
                 id="experience-heading"
                 className="text-3xl md:text-4xl font-bold text-foreground mb-4"
               >
-                Where I've worked
+                Where I&apos;ve worked
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 A timeline of my professional journey, building products that

@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { ArrowRight, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { motion, AnimatePresence } from 'motion/react'
+import { motion } from 'motion/react'
 
 const PORTFOLIO_CONFIG = {
   name: 'Mpho Moipolai',
