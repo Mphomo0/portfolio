@@ -38,11 +38,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpho-moipolai.co.za'),
   title: {
-    default: 'Mpho Moipolai | Web Design & SEO in Midrand',
+    default: 'Mpho Moipolai | Web Design & SEO Specialist, Midrand',
     template: '%s | Mpho Moipolai',
   },
   description:
-    'Web design and SEO services in Midrand, South Africa. Next.js developer specializing in fast, high-ranking websites. Free consultation.',
+    'Full-stack web developer & SEO specialist in Midrand, South Africa. 13+ years building fast, high-ranking Next.js websites. Free consultation available.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za',
     languages: {
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://www.mpho-moipolai.co.za',
-    title: 'Mpho Moipolai | Web Design & SEO in Midrand',
+    title: 'Mpho Moipolai | Web Design & SEO Specialist, Midrand',
     description:
-      'Web design and SEO services in Midrand, South Africa. Next.js developer building fast websites that rank.',
+      'Full-stack web developer & SEO specialist in Midrand, South Africa. 13+ years building fast, high-ranking Next.js websites.',
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
     images: [
@@ -84,9 +84,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mpho Moipolai | Web Design & SEO Midrand',
+    title: 'Mpho Moipolai | Web Design & SEO Specialist, Midrand',
     description:
-      'Next.js developer and SEO specialist in Midrand, South Africa.',
+      'Full-stack web developer & SEO specialist in Midrand, South Africa. 13+ years building fast, high-ranking Next.js websites.',
     creator: '@gift187',
     images: ['/opengraph-image'],
   },

@@ -2,16 +2,16 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Web Design Midrand | Fast, SEO-Ready Sites | Mpho Moipolai' },
+  title: { absolute: 'Web Design Midrand | Websites From R3,500 – Mpho Moipolai' },
   description:
-    'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses. Free consultation available.',
+    'Affordable web design in Midrand, Gauteng — sites from R3,500, live in 2-4 weeks. Fast, mobile-friendly & SEO-ready. Book your free consultation today.',
   alternates: {
     canonical: 'https://www.mpho-moipolai.co.za/web-design-midrand',
   },
   openGraph: {
-    title: 'Web Design in Midrand | Professional Websites',
+    title: 'Web Design Midrand | Websites From R3,500',
     description:
-      'Custom web design services in Midrand, Gauteng. Fast, responsive websites built with Next.js for South African businesses.',
+      'Affordable, SEO-ready web design in Midrand, Gauteng. Fast, responsive websites built with Next.js, live in 2-4 weeks.',
     url: 'https://www.mpho-moipolai.co.za/web-design-midrand',
     siteName: 'Mpho Moipolai',
     locale: 'en_ZA',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Design Midrand | Fast, SEO-Ready Sites | Mpho Moipolai',
+    title: 'Web Design Midrand | Websites From R3,500',
     description:
-      'Professional web design in Midrand, South Africa. Fast-loading, SEO-optimized websites for startups and small businesses.',
+      'Affordable web design in Midrand, Gauteng — sites from R3,500, live in 2-4 weeks. Fast, mobile-friendly & SEO-ready.',
     creator: '@gift187',
     images: ['/opengraph-image'],
   },
