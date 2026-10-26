@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 
 // Tech brand SVG icons from Devicon (https://devicon.dev/)
 const techIcons: Record<string, React.ReactNode> = {
@@ -373,7 +373,7 @@ export default function TechStackSection() {
         aria-labelledby='techstack-heading'
       >
         <div className='container mx-auto px-6'>
-          <motion.div
+          <m.div
             className='max-w-6xl mx-auto'
             variants={containerVariants}
             initial='hidden'
@@ -381,7 +381,7 @@ export default function TechStackSection() {
             viewport={{ once: true }}
           >
             {/* Header */}
-            <motion.div className='text-center mb-16' variants={itemVariants}>
+            <m.div className='text-center mb-16' variants={itemVariants}>
               <span className='inline-block text-sm font-medium text-violet-700 mb-4'>
                 Tech Stack
               </span>
@@ -396,12 +396,12 @@ export default function TechStackSection() {
                 enable me to build fast, scalable, and maintainable
                 applications.
               </p>
-            </motion.div>
+            </m.div>
 
             {/* Tech Grid */}
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
               {Object.entries(techStack).map(([category, techs]) => (
-                <motion.div
+                <m.div
                   key={category}
                   variants={itemVariants}
                   className='space-y-4'
@@ -413,7 +413,7 @@ export default function TechStackSection() {
                   </h3>
                   <div className='space-y-3'>
                     {techs.map((tech) => (
-                      <motion.div
+                      <m.div
                         key={tech.name}
                         className='group flex items-center gap-3 p-3 rounded-xl bg-card border border-border/50 shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all duration-300'
                         variants={itemVariants}
@@ -434,13 +434,13 @@ export default function TechStackSection() {
                         <span className='font-medium text-foreground'>
                           {tech.name}
                         </span>
-                      </motion.div>
+                      </m.div>
                     ))}
                   </div>
-                </motion.div>
+                </m.div>
               ))}
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </section>
     </>

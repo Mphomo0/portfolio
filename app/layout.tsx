@@ -1,20 +1,14 @@
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
-import { Geist, Geist_Mono, Inter } from 'next/font/google'
+import { Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { MotionProvider } from '@/components/layout/MotionProvider'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
-  display: 'swap',
-  preload: true,
-})
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
   display: 'swap',
   preload: true,
 })
@@ -302,7 +296,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistMono.variable} antialiased`}
       >
         {/* GA — lazyOnload keeps it off the critical path */}
         <Script
@@ -326,8 +320,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }}
         />
 
-        <Navbar />
-        <main>{children}</main>
+        <MotionProvider>
+          <Navbar />
+          <main>{children}</main>
+        </MotionProvider>
         <Footer />
       </body>
     </html>

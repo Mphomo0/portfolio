@@ -1,7 +1,8 @@
 'use client'
 
 import { useActionState, useEffect, useRef, useState } from 'react'
-import { motion, AnimatePresence } from 'motion/react'
+import { AnimatePresence } from 'motion/react'
+import * as m from 'motion/react-m'
 import { Button } from '@/components/ui/button'
 import { Mail, ArrowRight, ChevronDown } from 'lucide-react'
 import { sendEmail, type ContactState } from '@/app/actions/contact'
@@ -73,7 +74,7 @@ export default function ContactSection() {
         aria-labelledby="contact-heading"
       >
         <div className="container mx-auto px-6">
-          <motion.div
+          <m.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +95,7 @@ export default function ContactSection() {
               just want to say hello—I&apos;d love to hear from you.
             </p>
 
-            <motion.form
+            <m.form
               ref={formRef}
               className="space-y-6 text-left"
               action={formAction}
@@ -263,10 +264,10 @@ export default function ContactSection() {
                   Thank you! Your message has been sent.
                 </p>
               )}
-            </motion.form>
-          </motion.div>
+            </m.form>
+          </m.div>
 
-          <motion.div
+          <m.div
             className="max-w-3xl mx-auto mt-20"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -321,7 +322,7 @@ export default function ContactSection() {
                     >
                       <AnimatePresence>
                         {isOpen && (
-                          <motion.div
+                          <m.div
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
@@ -329,7 +330,7 @@ export default function ContactSection() {
                             className="px-4 pb-4 text-muted-foreground"
                           >
                             {faq.answer}
-                          </motion.div>
+                          </m.div>
                         )}
                       </AnimatePresence>
                     </div>
@@ -337,7 +338,7 @@ export default function ContactSection() {
                 )
               })}
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </section>
     </>

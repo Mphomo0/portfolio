@@ -5,7 +5,8 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'motion/react'
+import { AnimatePresence } from 'motion/react'
+import * as m from 'motion/react-m'
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -73,7 +74,7 @@ export function Navbar() {
           </div>
 
           <div className='hidden lg:block'>
-            <motion.div
+            <m.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
@@ -85,7 +86,7 @@ export function Navbar() {
               >
                 <Link href='#contact'>Get in Touch</Link>
               </Button>
-            </motion.div>
+            </m.div>
           </div>
 
           <button
@@ -104,7 +105,7 @@ export function Navbar() {
 
         <AnimatePresence>
           {isMobileMenuOpen && (
-            <motion.div
+            <m.div
               className='lg:hidden py-4 border-t border-border/50'
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
@@ -136,7 +137,7 @@ export function Navbar() {
                   </Button>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       </div>

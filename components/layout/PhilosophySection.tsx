@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 import { Gauge, Heart, Layers, Users } from 'lucide-react'
 
 const principles = [
@@ -63,7 +63,7 @@ export default function PhilosophySection() {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
             {/* LEFT COLUMN */}
-            <motion.div
+            <m.div
               className="lg:sticky lg:top-32"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -94,12 +94,12 @@ export default function PhilosophySection() {
                   maintained.”
                 </p>
               </div>
-            </motion.div>
+            </m.div>
 
             {/* RIGHT COLUMN */}
             <div className="grid gap-6">
               {principles.map((principle, index) => (
-                <motion.div
+                <m.div
                   key={principle.title}
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ export default function PhilosophySection() {
                       </p>
                     </div>
                   </div>
-                </motion.div>
+                </m.div>
               ))}
             </div>
           </div>

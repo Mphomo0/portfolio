@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 
 const experiences = [
   {
@@ -84,7 +84,7 @@ export function ExperienceSection() {
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <motion.div
+            <m.div
               className="text-center mb-16"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export function ExperienceSection() {
                 A timeline of my professional journey, building products that
                 matter and growing as a developer.
               </p>
-            </motion.div>
+            </m.div>
 
             <div className="relative">
               <div
@@ -114,7 +114,7 @@ export function ExperienceSection() {
 
               <ol className="space-y-12 list-none p-0 m-0">
                 {experiences.map((exp, index) => (
-                  <motion.li
+                  <m.li
                     key={`${exp.company}-${exp.title}`}
                     className={`relative flex flex-col md:flex-row gap-8 ${
                       index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
@@ -191,7 +191,7 @@ export function ExperienceSection() {
                       className="hidden md:block flex-1"
                       aria-hidden="true"
                     />
-                  </motion.li>
+                  </m.li>
                 ))}
               </ol>
             </div>

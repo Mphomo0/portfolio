@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 
 const faqs = [
   {
@@ -52,7 +52,7 @@ export function FAQSection() {
 
         <div className="max-w-3xl mx-auto space-y-6">
           {faqs.map((faq, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export function FAQSection() {
                 {faq.question}
               </h3>
               <p className="text-muted-foreground">{faq.answer}</p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

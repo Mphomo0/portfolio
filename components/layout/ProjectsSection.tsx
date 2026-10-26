@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 import { Button } from '@/components/ui/button'
 import { ExternalLink, ArrowRight } from 'lucide-react'
 
@@ -156,7 +156,7 @@ export function ProjectsSection() {
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, i) => (
-            <motion.article
+            <m.article
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -262,7 +262,7 @@ export function ProjectsSection() {
                   </Button>
                 </div>
               </div>
-            </motion.article>
+            </m.article>
           ))}
         </div>
 

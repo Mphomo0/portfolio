@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
@@ -57,7 +57,7 @@ export function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, i) => (
-            <motion.article
+            <m.article
               key={testimonial.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export function TestimonialsSection() {
                   {testimonial.service}
                 </p>
               </footer>
-            </motion.article>
+            </m.article>
           ))}
         </div>
       </div>

@@ -1,13 +1,24 @@
 import { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import { AboutSection } from '@/components/layout/AboutSection'
-import { ExperienceSection } from '@/components/layout/Experiencesection'
 import HeroSection from '@/components/layout/HeroSection'
-import PhilosophySection from '@/components/layout/PhilosophySection'
-import { ProjectsSection } from '@/components/layout/ProjectsSection'
-import TechStackSection from '@/components/layout/TechStackSection'
-import ContactSection from '@/components/layout/ContactSection'
-import { FAQSection } from '@/components/layout/FAQSection'
-import { TestimonialsSection } from '@/components/layout/TestimonialsSection'
+
+// Below-the-fold sections are still server-rendered but hydrate from separate chunks
+const TechStackSection = dynamic(() => import('@/components/layout/TechStackSection'))
+const ProjectsSection = dynamic(() =>
+  import('@/components/layout/ProjectsSection').then((m) => m.ProjectsSection)
+)
+const TestimonialsSection = dynamic(() =>
+  import('@/components/layout/TestimonialsSection').then((m) => m.TestimonialsSection)
+)
+const ExperienceSection = dynamic(() =>
+  import('@/components/layout/Experiencesection').then((m) => m.ExperienceSection)
+)
+const PhilosophySection = dynamic(() => import('@/components/layout/PhilosophySection'))
+const FAQSection = dynamic(() =>
+  import('@/components/layout/FAQSection').then((m) => m.FAQSection)
+)
+const ContactSection = dynamic(() => import('@/components/layout/ContactSection'))
 
 export const metadata: Metadata = {
   title: { absolute: 'Web Developer Midrand | Next.js & SEO | Mpho Moipolai' },

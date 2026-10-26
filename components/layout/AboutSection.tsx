@@ -1,7 +1,7 @@
 'use client'
 
 import { Code2, Sparkles, Zap } from 'lucide-react'
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 
 export function AboutSection() {
   return (
@@ -14,7 +14,7 @@ export function AboutSection() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Content */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -57,7 +57,7 @@ export function AboutSection() {
                   learning about the latest trends in tech.
                 </p>
               </div>
-            </motion.div>
+            </m.div>
 
             {/* Stats/Highlights Cards */}
             <div className="grid gap-6">
@@ -81,7 +81,7 @@ export function AboutSection() {
                     'Beautiful interfaces that are accessible to everyone. I build with empathy and test with real users.',
                 },
               ].map((card, index) => (
-                <motion.div
+                <m.div
                   key={index}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export function AboutSection() {
                   <p className="text-muted-foreground text-sm">
                     {card.description}
                   </p>
-                </motion.div>
+                </m.div>
               ))}
             </div>
           </div>

@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { ArrowRight, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { motion } from 'motion/react'
+import * as m from 'motion/react-m'
 
 const PORTFOLIO_CONFIG = {
   name: 'Mpho Moipolai',
@@ -154,7 +154,7 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 py-32 relative z-10">
-        <motion.div
+        <m.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}
           initial="hidden"
@@ -168,31 +168,31 @@ export default function HeroSection() {
             </span>
           </div>
         {/* Main H1 - Answer-First Format for AI Citability */}
-        <motion.h1
+        <m.h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           variants={itemVariants}
         >
           Mpho Moipolai{' '}
-          <motion.span
+          <m.span
             className="block brand-text-gradient"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             Web Design Midrand | Next.js Developer
-          </motion.span>
-        </motion.h1>
+          </m.span>
+        </m.h1>
 
         {/* Definition Pattern - First sentence defines entity */}
-        <motion.p
+        <m.p
           className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4"
           variants={itemVariants}
         >
           <strong className="text-foreground">Mpho Moipolai is a Full Stack Web Developer and SEO Specialist based in Midrand, South Africa</strong>, with 13+ years of experience building production-grade web applications.
-        </motion.p>
+        </m.p>
 
         {/* Specific Metrics for AI Citability */}
-        <motion.div
+        <m.div
           className="flex flex-wrap justify-center gap-4 mb-6"
           variants={itemVariants}
         >
@@ -205,18 +205,18 @@ export default function HeroSection() {
           <span className="px-3 py-1.5 text-sm bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
             Specializing in Next.js & SEO
           </span>
-        </motion.div>
+        </m.div>
 
         {/* Value Proposition */}
-        <motion.p
+        <m.p
           className="text-base text-muted-foreground max-w-xl mx-auto mb-8"
           variants={itemVariants}
         >
           I help startups and small businesses build fast, scalable, and AI-optimized web applications that rank higher on Google and convert visitors into customers.
-        </motion.p>
+        </m.p>
 
           {/* CTA Buttons */}
-          <motion.div
+          <m.div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 w-full"
             variants={itemVariants}
           >
@@ -249,15 +249,15 @@ export default function HeroSection() {
                 <Download className="w-5 h-5" /> Download Resume
               </a>
             </Button>
-          </motion.div>
+          </m.div>
 
           {/* Social Links */}
-          <motion.div
+          <m.div
             className="flex items-center justify-center gap-4"
             variants={itemVariants}
           >
             {socialIcons.map((social, index) => (
-              <motion.a
+              <m.a
                 key={social.name}
                 href={social.href}
                 target="_blank"
@@ -275,19 +275,19 @@ export default function HeroSection() {
                 whileTap={{ scale: 0.95 }}
               >
                 <social.icon />
-              </motion.a>
+              </m.a>
             ))}
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        <m.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.6 }}
         >
-          <motion.div
+          <m.div
             className="flex flex-col items-center gap-2 cursor-pointer"
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
@@ -311,7 +311,7 @@ export default function HeroSection() {
               Scroll to explore
             </span>
             <div className="w-6 h-10 rounded-full border-2 border-border flex items-start justify-center p-2">
-              <motion.div
+              <m.div
                 className="w-1 h-2 rounded-full bg-muted-foreground"
                 animate={{ y: [0, 8, 0], opacity: [1, 0.3, 1] }}
                 transition={{
@@ -321,8 +321,8 @@ export default function HeroSection() {
                 }}
               />
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   )
