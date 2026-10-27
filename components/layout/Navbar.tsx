@@ -49,7 +49,7 @@ export function Navbar() {
     >
       <div className='container mx-auto px-6'>
         <nav className='flex items-center justify-between h-16 lg:h-20'>
-          <Link href='/' className='flex items-center gap-2 group'>
+          <Link prefetch={false} href='/' className='flex items-center gap-2 group'>
             <Image
               src='/images/logo/logo.webp'
               alt='Mpho Moipolai Logo'
@@ -63,7 +63,7 @@ export function Navbar() {
 
           <div className='hidden lg:flex items-center gap-1'>
             {navLinks.map((link) => (
-              <Link
+              <Link prefetch={false}
                 key={link.href}
                 href={link.href}
                 className='px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 rounded-lg hover:bg-secondary'
@@ -84,7 +84,7 @@ export function Navbar() {
                 asChild
                 className='bg-violet-500 hover:bg-purple-600 text-white border-0 shadow-md transition-colors'
               >
-                <Link href='#contact'>Get in Touch</Link>
+                <Link prefetch={false} href='#contact'>Get in Touch</Link>
               </Button>
             </m.div>
           </div>
@@ -114,7 +114,7 @@ export function Navbar() {
             >
               <div className='flex flex-col gap-2'>
                 {navLinks.map((link) => (
-                  <Link
+                  <Link prefetch={false}
                     key={link.href}
                     href={link.href}
                     className='px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors'
@@ -128,7 +128,7 @@ export function Navbar() {
                     className='w-full bg-violet-500 hover:bg-purple-600 text-white border-0 transition-colors'
                     asChild
                   >
-                    <Link
+                    <Link prefetch={false}
                       href='#contact'
                       onClick={() => setIsMobileMenuOpen(false)}
                     >

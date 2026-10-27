@@ -141,7 +141,7 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-1">
-              <Link
+              <Link prefetch={false}
                 href="/"
                 className="inline-block mb-4"
                 aria-label="Mpho Moipolai - Home"
@@ -168,7 +168,7 @@ export function Footer() {
                 <ul className="space-y-2">
                   {footerLinks.map((link) => (
                     <li key={link.href}>
-                      <Link
+                      <Link prefetch={false}
                         href={link.href}
                         className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                       >
@@ -187,7 +187,7 @@ export function Footer() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                   {serviceLinks.map((link) => (
                     <li key={link.href}>
-                      <Link
+                      <Link prefetch={false}
                         href={link.href}
                         className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                       >
@@ -228,10 +228,10 @@ export function Footer() {
 
           {/* Legal Links */}
           <div className="flex gap-4 text-sm">
-            <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link prefetch={false} href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link prefetch={false} href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
               Terms of Service
             </Link>
           </div>

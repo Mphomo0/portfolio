@@ -95,7 +95,7 @@ export default function UXUIDesignPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
             ← Back to Home
           </Link>
         </nav>
@@ -117,10 +117,10 @@ export default function UXUIDesignPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why UX/UI Design Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            In today&apos;s competitive market, users expect seamless digital experiences. Poor UX costs businesses significantly—users abandon sites that are difficult to navigate. In South Africa, where mobile usage dominates, responsive and intuitive design is critical. Our UX/UI design services help you create products that users love, improving engagement, retention, and ultimately your bottom line. UX/UI work also multiplies the value of your other digital investments — it shapes the layouts we build in our <Link href="/web-design-midrand" className="text-violet-500 hover:underline">web design projects</Link>, drives the checkout flows in <Link href="/ecommerce-website-development" className="text-violet-500 hover:underline">ecommerce builds</Link>, and applies the visual language from your <Link href="/branding-design" className="text-violet-500 hover:underline">brand identity</Link> consistently across every screen.
+            In today&apos;s competitive market, users expect seamless digital experiences. Poor UX costs businesses significantly—users abandon sites that are difficult to navigate. In South Africa, where mobile usage dominates, responsive and intuitive design is critical. Our UX/UI design services help you create products that users love, improving engagement, retention, and ultimately your bottom line. UX/UI work also multiplies the value of your other digital investments — it shapes the layouts we build in our <Link prefetch={false} href="/web-design-midrand" className="text-violet-500 hover:underline">web design projects</Link>, drives the checkout flows in <Link prefetch={false} href="/ecommerce-website-development" className="text-violet-500 hover:underline">ecommerce builds</Link>, and applies the visual language from your <Link prefetch={false} href="/branding-design" className="text-violet-500 hover:underline">brand identity</Link> consistently across every screen.
           </p>
           <p>
-            Need a user-centered design? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free consultation.
+            Need a user-centered design? <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free consultation.
           </p>
         </section>
 
@@ -228,10 +228,10 @@ export default function UXUIDesignPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
-            <Link href="/branding-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Branding &amp; Design</Link>
-            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
-            <Link href="/nextjs-website-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Next.js Website Design</Link>
+            <Link prefetch={false} href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link prefetch={false} href="/branding-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Branding &amp; Design</Link>
+            <Link prefetch={false} href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+            <Link prefetch={false} href="/nextjs-website-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Next.js Website Design</Link>
           </div>
         </nav>
       </article>

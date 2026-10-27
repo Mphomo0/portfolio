@@ -188,7 +188,7 @@ export default function AboutPage() {
 
       <article className="container mx-auto px-6 py-32 max-w-4xl">
         <nav className="mb-8">
-          <Link
+          <Link prefetch={false}
             href="/"
             className="inline-flex items-center gap-2 text-violet-500 hover:text-violet-400 transition-colors"
           >
@@ -400,7 +400,7 @@ export default function AboutPage() {
           <p className="text-lg mb-6 text-muted-foreground">
             Ready to start your project?
           </p>
-          <Link
+          <Link prefetch={false}
             href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-violet-500 hover:bg-purple-600 text-white rounded-xl font-semibold transition-colors"
           >

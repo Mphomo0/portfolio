@@ -95,7 +95,7 @@ export default function SocialMediaAdsPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
             ← Back to Home
           </Link>
         </nav>
@@ -117,10 +117,10 @@ export default function SocialMediaAdsPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Social Media Ads Matter in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            Social media ads offer the highest targeting precision of any advertising channel. In Gauteng&apos;s competitive market, well-optimized ads can achieve ROAS (Return on Ad Spend) of 3-10x or more. Unlike traditional advertising, you only pay for actual clicks or impressions, and you can scale successful campaigns immediately. Our data-driven approach ensures every rand of your ad budget works harder. Paid ads also perform best alongside organic channels — consistent <Link href="/social-media-marketing" className="text-violet-500 hover:underline">social media marketing</Link> builds the trust that makes ads convert, and a fast, well-built <Link href="/web-design-midrand" className="text-violet-500 hover:underline">website</Link> ensures the clicks you pay for don&apos;t bounce.
+            Social media ads offer the highest targeting precision of any advertising channel. In Gauteng&apos;s competitive market, well-optimized ads can achieve ROAS (Return on Ad Spend) of 3-10x or more. Unlike traditional advertising, you only pay for actual clicks or impressions, and you can scale successful campaigns immediately. Our data-driven approach ensures every rand of your ad budget works harder. Paid ads also perform best alongside organic channels — consistent <Link prefetch={false} href="/social-media-marketing" className="text-violet-500 hover:underline">social media marketing</Link> builds the trust that makes ads convert, and a fast, well-built <Link prefetch={false} href="/web-design-midrand" className="text-violet-500 hover:underline">website</Link> ensures the clicks you pay for don&apos;t bounce.
           </p>
           <p>
-            Ready to scale your business with ads? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free ad strategy consultation.
+            Ready to scale your business with ads? <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free ad strategy consultation.
           </p>
         </section>
 
@@ -187,9 +187,9 @@ export default function SocialMediaAdsPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/social-media-marketing" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Marketing</Link>
-            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
-            <Link href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
+            <Link prefetch={false} href="/social-media-marketing" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Marketing</Link>
+            <Link prefetch={false} href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link prefetch={false} href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
           </div>
         </nav>
       </article>

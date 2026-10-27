@@ -238,7 +238,7 @@ export function ProjectsSection() {
                 {/* Actions */}
                 <div className="flex items-center gap-3">
                   <Button variant="outline" size="sm" asChild>
-                    <Link
+                    <Link prefetch={false}
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -250,7 +250,7 @@ export function ProjectsSection() {
                   </Button>
 
                   <Button variant="ghost" size="sm" asChild>
-                    <Link
+                    <Link prefetch={false}
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -269,7 +269,7 @@ export function ProjectsSection() {
         {/* View All */}
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <Link
+            <Link prefetch={false}
               href="https://github.com/mphomo0?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"

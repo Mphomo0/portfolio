@@ -103,7 +103,7 @@ export default function SocialMediaMarketingPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
             ← Back to Home
           </Link>
         </nav>
@@ -125,10 +125,10 @@ export default function SocialMediaMarketingPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Social Media Marketing Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            South Africa has one of the highest social media engagement rates globally. For Midrand businesses, social media provides direct access to local customers and allows for highly targeted advertising. Unlike traditional marketing, social media offers measurable ROI and the ability to engage in real-time conversations with your audience, building trust and loyalty that translates to sales. Social media also works best as part of a joined-up strategy: a strong <Link href="/branding-design" className="text-violet-500 hover:underline">brand identity</Link> keeps your feed recognisable, <Link href="/social-media-ads" className="text-violet-500 hover:underline">paid social ads</Link> amplify your best organic content, and a fast <Link href="/web-design-midrand" className="text-violet-500 hover:underline">website</Link> converts the traffic your profiles generate.
+            South Africa has one of the highest social media engagement rates globally. For Midrand businesses, social media provides direct access to local customers and allows for highly targeted advertising. Unlike traditional marketing, social media offers measurable ROI and the ability to engage in real-time conversations with your audience, building trust and loyalty that translates to sales. Social media also works best as part of a joined-up strategy: a strong <Link prefetch={false} href="/branding-design" className="text-violet-500 hover:underline">brand identity</Link> keeps your feed recognisable, <Link prefetch={false} href="/social-media-ads" className="text-violet-500 hover:underline">paid social ads</Link> amplify your best organic content, and a fast <Link prefetch={false} href="/web-design-midrand" className="text-violet-500 hover:underline">website</Link> converts the traffic your profiles generate.
           </p>
           <p>
-            Ready to grow your social presence? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free social media audit.
+            Ready to grow your social presence? <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free social media audit.
           </p>
         </section>
 
@@ -229,10 +229,10 @@ export default function SocialMediaMarketingPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/social-media-ads" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Ads</Link>
-            <Link href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
-            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
-            <Link href="/branding-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Branding &amp; Design</Link>
+            <Link prefetch={false} href="/social-media-ads" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Ads</Link>
+            <Link prefetch={false} href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
+            <Link prefetch={false} href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link prefetch={false} href="/branding-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Branding &amp; Design</Link>
           </div>
         </nav>
       </article>

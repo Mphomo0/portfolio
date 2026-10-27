@@ -95,7 +95,7 @@ export default function WebMaintenancePage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
             ← Back to Home
           </Link>
         </nav>
@@ -117,10 +117,10 @@ export default function WebMaintenancePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Web Maintenance Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            Websites are not set-and-forget—they require ongoing care to remain secure and functional. Outdated plugins and CMS versions are the leading cause of website hacks. In Gauteng&apos;s competitive market, a slow or broken website damages your reputation and costs you customers. Regular maintenance ensures your website loads fast, ranks well on Google, and provides a secure experience for your visitors. Prevention is far cheaper than fixing a hacked site. Maintenance also protects your search rankings — the speed and security work feeds directly into the results our <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO services</Link> deliver, and combined with managed <Link href="/web-hosting" className="text-violet-500 hover:underline">web hosting</Link> you get one accountable partner for your entire site.
+            Websites are not set-and-forget—they require ongoing care to remain secure and functional. Outdated plugins and CMS versions are the leading cause of website hacks. In Gauteng&apos;s competitive market, a slow or broken website damages your reputation and costs you customers. Regular maintenance ensures your website loads fast, ranks well on Google, and provides a secure experience for your visitors. Prevention is far cheaper than fixing a hacked site. Maintenance also protects your search rankings — the speed and security work feeds directly into the results our <Link prefetch={false} href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO services</Link> deliver, and combined with managed <Link prefetch={false} href="/web-hosting" className="text-violet-500 hover:underline">web hosting</Link> you get one accountable partner for your entire site.
           </p>
           <p>
-            Need website maintenance? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a maintenance plan.
+            Need website maintenance? <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a maintenance plan.
           </p>
         </section>
 
@@ -187,9 +187,9 @@ export default function WebMaintenancePage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/web-hosting" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Hosting</Link>
-            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
-            <Link href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
+            <Link prefetch={false} href="/web-hosting" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Hosting</Link>
+            <Link prefetch={false} href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link prefetch={false} href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
           </div>
         </nav>
       </article>

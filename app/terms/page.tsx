@@ -43,7 +43,7 @@ export default function TermsPage() {
 
       <article className="container mx-auto px-6 py-32 max-w-4xl">
         <nav className="mb-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="inline-flex items-center gap-2 text-violet-500 hover:text-violet-400 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Home
           </Link>
@@ -240,13 +240,13 @@ export default function TermsPage() {
 
         {/* Footer */}
         <section className="text-center mt-12 pt-8 border-t">
-          <Link
+          <Link prefetch={false}
             href="/privacy"
             className="text-violet-500 hover:underline mr-6"
           >
             Privacy Policy
           </Link>
-          <Link
+          <Link prefetch={false}
             href="/"
             className="text-violet-500 hover:underline"
           >

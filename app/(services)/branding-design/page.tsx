@@ -95,7 +95,7 @@ export default function BrandingDesignPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
             ← Back to Home
           </Link>
         </nav>
@@ -117,10 +117,10 @@ export default function BrandingDesignPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Branding Matters in Midrand</h2>
           <p className="text-lg leading-relaxed mb-6">
-            In Gauteng&apos;s competitive market, your brand differentiates you from hundreds of similar businesses. Small businesses with consistent branding appear more established and trustworthy. Good branding builds emotional connections with customers, increases perceived value, and supports all your marketing efforts—from your website to social media to printed materials. Investing in professional branding pays dividends through customer trust and loyalty. Your brand identity also carries through everything we build for you — from your <Link href="/web-design-midrand" className="text-violet-500 hover:underline">website design</Link> and <Link href="/ux-ui-design" className="text-violet-500 hover:underline">UX/UI design</Link> to your <Link href="/social-media-marketing" className="text-violet-500 hover:underline">social media presence</Link> — so customers get a consistent experience at every touchpoint.
+            In Gauteng&apos;s competitive market, your brand differentiates you from hundreds of similar businesses. Small businesses with consistent branding appear more established and trustworthy. Good branding builds emotional connections with customers, increases perceived value, and supports all your marketing efforts—from your website to social media to printed materials. Investing in professional branding pays dividends through customer trust and loyalty. Your brand identity also carries through everything we build for you — from your <Link prefetch={false} href="/web-design-midrand" className="text-violet-500 hover:underline">website design</Link> and <Link prefetch={false} href="/ux-ui-design" className="text-violet-500 hover:underline">UX/UI design</Link> to your <Link prefetch={false} href="/social-media-marketing" className="text-violet-500 hover:underline">social media presence</Link> — so customers get a consistent experience at every touchpoint.
           </p>
           <p>
-            Need a new brand identity? <Link href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free branding consultation.
+            Need a new brand identity? <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">Contact us today</Link> for a free branding consultation.
           </p>
         </section>
 
@@ -187,10 +187,10 @@ export default function BrandingDesignPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
-            <Link href="/ux-ui-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">UX/UI Design</Link>
-            <Link href="/social-media-marketing" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Marketing</Link>
-            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+            <Link prefetch={false} href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link prefetch={false} href="/ux-ui-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">UX/UI Design</Link>
+            <Link prefetch={false} href="/social-media-marketing" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Social Media Marketing</Link>
+            <Link prefetch={false} href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
           </div>
         </nav>
       </article>

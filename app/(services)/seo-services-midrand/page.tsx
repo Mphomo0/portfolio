@@ -114,7 +114,7 @@ export default function SEOServicesMidrandPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link
+          <Link prefetch={false}
             href="/"
             className="text-violet-500 hover:text-violet-400 transition-colors"
           >
@@ -160,22 +160,22 @@ export default function SEOServicesMidrandPage() {
           </p>
           <p className="text-lg leading-relaxed mb-6">
             SEO delivers the best results when your site is built for it. Our{' '}
-            <Link href="/web-design-midrand" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/web-design-midrand" className="text-violet-500 hover:underline">
               web design
             </Link>{' '}
             and{' '}
-            <Link href="/nextjs-website-design" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/nextjs-website-design" className="text-violet-500 hover:underline">
               Next.js development
             </Link>{' '}
             services produce fast, crawlable sites that rank more easily, while{' '}
-            <Link href="/web-maintenance" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/web-maintenance" className="text-violet-500 hover:underline">
               ongoing maintenance
             </Link>{' '}
             keeps performance and security from slipping after launch.
           </p>
           <p>
             Ready to boost your rankings?{' '}
-            <Link href="/#contact" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">
               Contact us today
             </Link>{' '}
             for a free SEO audit.
@@ -222,12 +222,12 @@ export default function SEOServicesMidrandPage() {
             <div className="border-b border-white/10 pb-6">
               <h3 className="font-semibold mb-1">Sozim Trading & Consultancy</h3>
               <p className="text-muted-foreground mb-2">On-page SEO and local keyword targeting for an education platform. Achieved first-page Google rankings for core training terms within 3 months of launch.</p>
-              <Link href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
             <div className="border-b border-white/10 pb-6">
               <h3 className="font-semibold mb-1">Jiyology Building & Plumbing</h3>
               <p className="text-muted-foreground mb-2">Local SEO targeting Soweto and Gauteng service-area keywords. Generated more qualified leads in 3 months than the previous site in a full year.</p>
-              <Link href="https://www.jiyology.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.jiyology.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
             <div>
               <h3 className="font-semibold mb-1">Tanosa Group</h3>
@@ -353,25 +353,25 @@ export default function SEOServicesMidrandPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link
+            <Link prefetch={false}
               href="/web-design-midrand"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               Web Design Midrand
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/nextjs-website-design"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               Next.js Website Design
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/web-maintenance"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               Web Maintenance
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/ecommerce-website-development"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >

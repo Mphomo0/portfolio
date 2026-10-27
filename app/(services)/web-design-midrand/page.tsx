@@ -122,7 +122,7 @@ export default function WebDesignMidrandPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link
+          <Link prefetch={false}
             href="/"
             className="text-violet-500 hover:text-violet-400 transition-colors"
           >
@@ -171,23 +171,23 @@ export default function WebDesignMidrandPage() {
             A well-designed website also works hardest when it&apos;s paired
             with the right foundations. Most of our web design projects are
             built with{' '}
-            <Link href="/nextjs-website-design" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/nextjs-website-design" className="text-violet-500 hover:underline">
               Next.js
             </Link>{' '}
             for speed and Core Web Vitals, launched alongside{' '}
-            <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/seo-services-midrand" className="text-violet-500 hover:underline">
               local SEO
             </Link>{' '}
             so your site ranks for Midrand searches from day one, and kept
             secure with ongoing{' '}
-            <Link href="/web-maintenance" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/web-maintenance" className="text-violet-500 hover:underline">
               website maintenance
             </Link>
             .
           </p>
           <p>
             Ready to start your project?{' '}
-            <Link href="/#contact" className="text-violet-500 hover:underline">
+            <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">
               Contact us today
             </Link>{' '}
             for a free consultation.
@@ -234,17 +234,17 @@ export default function WebDesignMidrandPage() {
             <div className="border-b border-white/10 pb-6">
               <h3 className="font-semibold mb-1">Sozim Trading & Consultancy</h3>
               <p className="text-muted-foreground mb-2">Education platform built with Next.js, TypeScript, and Prisma. Achieved first-page Google rankings for key training and certification terms within 3 months of launch.</p>
-              <Link href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
             <div className="border-b border-white/10 pb-6">
               <h3 className="font-semibold mb-1">Jiyology Building & Plumbing</h3>
               <p className="text-muted-foreground mb-2">Local service business website with Gauteng-targeted local SEO. Generated more leads in 3 months than the previous site did in a full year.</p>
-              <Link href="https://www.jiyology.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.jiyology.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
             <div>
               <h3 className="font-semibold mb-1">Nostalgic Studio</h3>
               <p className="text-muted-foreground mb-2">Digital agency website achieving perfect Core Web Vitals scores. Designed to convert visitors into leads through clear service positioning and fast load times.</p>
-              <Link href="https://www.nostalgic-studio.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.nostalgic-studio.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
           </div>
         </section>
@@ -369,31 +369,31 @@ export default function WebDesignMidrandPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link
+            <Link prefetch={false}
               href="/seo-services-midrand"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               SEO Services Midrand
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/nextjs-website-design"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               Next.js Website Design
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/ecommerce-website-development"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               Ecommerce Development
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/ux-ui-design"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >
               UX/UI Design
             </Link>
-            <Link
+            <Link prefetch={false}
               href="/branding-design"
               className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium"
             >

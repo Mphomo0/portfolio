@@ -53,7 +53,7 @@ export default function PrivacyPage() {
 
       <article className="container mx-auto px-6 py-32 max-w-4xl">
         <nav className="mb-8">
-          <Link
+          <Link prefetch={false}
             href="/"
             className="inline-flex items-center gap-2 text-violet-500 hover:text-violet-400 transition-colors"
           >
@@ -262,10 +262,10 @@ export default function PrivacyPage() {
 
         {/* Footer */}
         <section className="text-center mt-12 pt-8 border-t">
-          <Link href="/terms" className="text-violet-500 hover:underline mr-6">
+          <Link prefetch={false} href="/terms" className="text-violet-500 hover:underline mr-6">
             Terms of Service
           </Link>
-          <Link href="/" className="text-violet-500 hover:underline">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:underline">
             Back to Home
           </Link>
         </section>

@@ -225,7 +225,7 @@ export default function HeroSection() {
               asChild
               className="px-8 py-6 w-full sm:w-auto bg-violet-500 hover:bg-purple-600 text-white border-0 transition-colors"
             >
-              <Link
+              <Link prefetch={false}
                 href="#projects"
                 className="gap-2 flex items-center justify-center"
               >

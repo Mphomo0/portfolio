@@ -95,7 +95,7 @@ export default function NextjsWebsiteDesignPage() {
       />
       <article className="container mx-auto px-6 py-32">
         <nav className="mb-8">
-          <Link href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
+          <Link prefetch={false} href="/" className="text-violet-500 hover:text-violet-400 transition-colors">
             ← Back to Home
           </Link>
         </nav>
@@ -117,10 +117,10 @@ export default function NextjsWebsiteDesignPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Why Choose Next.js for Your Business</h2>
           <p className="text-lg leading-relaxed mb-6">
-            In today&apos;s competitive digital landscape, website speed directly impacts your bottom line. Studies show that a 1-second delay in page load time can reduce conversions by 7%. Next.js websites load 3-5x faster than traditional WordPress sites, improving your Google rankings, reducing bounce rates, and increasing sales. Our Next.js expertise ensures your website is future-proof and scales with your business. Next.js is the framework behind all our <Link href="/web-design-midrand" className="text-violet-500 hover:underline">web design projects</Link> and <Link href="/ecommerce-website-development" className="text-violet-500 hover:underline">ecommerce builds</Link>, and its server-rendered pages give our <Link href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO work</Link> a technical head start that WordPress sites struggle to match.
+            In today&apos;s competitive digital landscape, website speed directly impacts your bottom line. Studies show that a 1-second delay in page load time can reduce conversions by 7%. Next.js websites load 3-5x faster than traditional WordPress sites, improving your Google rankings, reducing bounce rates, and increasing sales. Our Next.js expertise ensures your website is future-proof and scales with your business. Next.js is the framework behind all our <Link prefetch={false} href="/web-design-midrand" className="text-violet-500 hover:underline">web design projects</Link> and <Link prefetch={false} href="/ecommerce-website-development" className="text-violet-500 hover:underline">ecommerce builds</Link>, and its server-rendered pages give our <Link prefetch={false} href="/seo-services-midrand" className="text-violet-500 hover:underline">SEO work</Link> a technical head start that WordPress sites struggle to match.
           </p>
           <p>
-            Want a high-performance website? <Link href="/#contact" className="text-violet-500 hover:underline">Get in touch</Link> to discuss your project.
+            Want a high-performance website? <Link prefetch={false} href="/#contact" className="text-violet-500 hover:underline">Get in touch</Link> to discuss your project.
           </p>
         </section>
 
@@ -164,12 +164,12 @@ export default function NextjsWebsiteDesignPage() {
             <div className="border-b border-white/10 pb-6">
               <h3 className="font-semibold mb-1">Sozim Trading & Consultancy</h3>
               <p className="text-muted-foreground mb-2">Full Next.js + Prisma + MongoDB education platform. First-page Google rankings for primary training keywords within 3 months of launch.</p>
-              <Link href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.sozim.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
             <div className="border-b border-white/10 pb-6">
               <h3 className="font-semibold mb-1">Nostalgic Studio</h3>
               <p className="text-muted-foreground mb-2">Next.js + Tailwind agency site with perfect Core Web Vitals. Exceptional Lighthouse performance and organic visibility from launch day.</p>
-              <Link href="https://www.nostalgic-studio.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
+              <Link prefetch={false} href="https://www.nostalgic-studio.co.za" target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:underline text-sm">View site →</Link>
             </div>
             <div>
               <h3 className="font-semibold mb-1">Tanosa Group</h3>
@@ -241,11 +241,11 @@ export default function NextjsWebsiteDesignPage() {
         <nav aria-label="Related services" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Related Services</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
-            <Link href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
-            <Link href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
-            <Link href="/ux-ui-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">UX/UI Design</Link>
-            <Link href="/web-hosting" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Hosting</Link>
+            <Link prefetch={false} href="/web-design-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Design Midrand</Link>
+            <Link prefetch={false} href="/seo-services-midrand" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">SEO Services Midrand</Link>
+            <Link prefetch={false} href="/ecommerce-website-development" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Ecommerce Development</Link>
+            <Link prefetch={false} href="/ux-ui-design" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">UX/UI Design</Link>
+            <Link prefetch={false} href="/web-hosting" className="px-4 py-2 rounded-lg bg-muted/30 border border-border hover:border-violet-500/50 transition-colors text-sm font-medium">Web Hosting</Link>
           </div>
         </nav>
       </article>
